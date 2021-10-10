@@ -1,0 +1,104 @@
+/* TODO: Use a CSS reset? */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  padding: 5vh 5vw;
+
+  display: grid;
+  grid-template-rows: repeat(4, 4fr);
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5vh;
+
+  /* check browser support on this or just use JS. I don't think it's working */
+  scroll-snap-type: both mandatory; 
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+/* 
+TODO: Refactor html so that the sections can take up 100% of vw and vw and add a section container (<main class="section-container") for the content area. This way the nav link scrolling with go to top left corner and you can get rid of grid gaps and other viewport based height, width and padding. ANNNND if you have to use javascript it will make location calculations easier.
+ */
+
+section {
+  /* Not sure if I need or should just use percentage */
+  /* height: 90vh;
+  width: 90vw; */
+
+  /* [hor offset] [vert offset] [blur radius] [optional spread radius] [color] */
+  box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.35);
+
+  /* check browser support on this or just use JS. I don't think it's working */
+  scroll-snap-align: start;
+  scroll-padding: 10px; /* delete after html refactoring */
+}
+
+
+/* --------------- TABLET --------------- */
+@media screen and (min-width: 768px) {
+  body {
+    height: 200vh;
+    width: 200vw;
+    padding: 10vh 10vw;
+    display: grid;
+    /* TODO: keep on tablet or move to desktop only? */
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10vh;
+
+  }
+
+  section {
+    height: 80vh;
+    width: 80vw;
+    box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.35);
+  }
+
+  #home {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  #about {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+
+  #work {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  #contact {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+}
+/* --------------- DESKTOP --------------- */
+@media screen and (min-width: 1028px) {
+  body {
+    padding: 10vh 10vw;
+    display: grid;
+    gap: 10vh;
+
+  }
+
+  section {
+    height: 80vh;
+    width: 80vw;
+    box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+

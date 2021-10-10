@@ -18,7 +18,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Design, plan and build a portfolio website
 
 ## Wireframes
 
@@ -69,29 +69,32 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Hamburger | H | 1hr | hr |
-| Project Previews | H | 3hr | hr |
-| Regular Nav | H | 1hr | hr |  
-| Adding Form | H | 1.5hr|  hr | 
+| Project Previews & design inspiration | H | 4hr | 4+hr |
+| Hamburger/mobile Nav | H | 2hr | hr |
+| About, Contact Sections  | H | 2hr | hr |  
+| Project Flip Cards  | H | 2hr | hr |  
 | Other sections and flex| M | 3hr | hr|
 | Working with API | H | 3hrs|  hr | 
-| Responsive | H | 3hr | hr | hr |
-| Social Media Icons | L | 1hr |  hr |
+| Responsive | H | 3hr | hr |
+| Social Media Icons/links | L | 1hr |  hr |
+| Nav links scroll to proper section on grid | L | 3hr |  hr |
+| Design & Make Favicon | L | 1.5hr |  hr |
 | Total | H | 15.5hrs| hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Project Hover | L | 3hr | -hr | hr |
-| Banner letters wiggle | L | 1hr | hr |
-| Interactive Banner | M | 4hr | hr |
-| Materialize | H | 4hr | -hr | hr |
-| Bootstrap | H | 4hr | hr |
-| Make own icon | L | 4hr | hr |
+| Logo or welcome message SVG  animation | H | 3hr | hr |
+| Floating shape decorations on home page + interact with mouse | L | 4hr | hr |
+| Mouse scroll (correct order: right, down, left) | L | 3hr | -hr | hr |
+| Floating Tech Icons | L | 2hr | hr |
+| Pop open mobile nav | L | 3hr | hr |
+| Hamberger to "X" icon transformation | L | 3hr | hr |
+| Email Form | M | 4hr | hr |
 | Total | H | 20hrs| hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+ Is Sass considered a library? 
 
 ## Code Snippet
 
