@@ -2,15 +2,13 @@
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Day 1| Project Description / Wireframes | Complete
+|Day 1| Priority Matrix / Timeline | Complete
+|Day 2| Basic Layout | Complete
+|Day 2| Core Application Structure (HTML, CSS, etc.) | Complete
+|Day 3| Animations / API Implementation | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
@@ -18,19 +16,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Design, plan and build a portfolio website
+Design, plan and build a portfolio website. The site will use Javascript/jQuery to move from section to section, to make AJAX call to a third-party API and to make interactive animations  on the site. It will feature completed projects, an about me sections and a contact section (hopefully) with an "email me" form.
 
 ## Wireframes
-
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
-
-- [Mobile](https://i.imgur.com/P3iBEZf.jpg)
-- [Desktop](https://i.imgur.com/xpOWo0E.jpg)
-
-Wireframing Resources:
-
-- [Mockflow](https://mockflow.com/app/#Wireframe)
-- [Figma](https://www.figma.com/)
 
 
 ## Time/Priority Matrix 
@@ -62,53 +50,49 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Functional Components
 
-Based on the initial logic defined in the previous sections try and breakdown the logic further into smaller components.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the portfolio. Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the portfolio must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
+- Switch from mobile pop-open style menu for mobile to regular menu for desktop
+- Desktop nav will need to scroll right, down, left, up to the correct section on page and have an indicator to show what page you are on.
+- Scrolling with mouse wheel (and track pad?) will also scroll in correct order (right, down, left)
+- Layout will need to change for different screen sizes
+- Project section will have CSS hover animations
+- Contact sectil will have email and social media links and email form if time allows
+- Home page will have interactive floating decorations and/or SVG animation.
 
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
 | Project Previews & design inspiration | H | 4hr | 4+hr |
+| Project Worksheet | H | 1hr | 2+hr |
 | Hamburger/mobile Nav | H | 2hr | hr |
-| About, Contact Sections  | H | 2hr | hr |  
-| Project Flip Cards  | H | 2hr | hr |  
-| Other sections and flex| M | 3hr | hr|
-| Working with API | H | 3hrs|  hr | 
+| Desktop Nav | H | 1hr | 1hr ]
+| Working with API | H | 1.5hrs|  hr | 
 | Responsive | H | 3hr | hr |
+| Nav links move to proper section with jQuery | L | 2hr |  hr |
+| Mouse scroll (correct order: right, down, left) | L | 3hr | -hr | hr |
+| About, Project and Contact Sections  | H | 2hr | hr |  
 | Social Media Icons/links | L | 1hr |  hr |
-| Nav links scroll to proper section on grid | L | 3hr |  hr |
 | Design & Make Favicon | L | 1.5hr |  hr |
-| Total | H | 15.5hrs| hrs |
+| Total | H | 20hrs| hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Logo or welcome message SVG  animation | H | 3hr | hr |
-| Floating shape decorations on home page + interact with mouse | L | 4hr | hr |
-| Mouse scroll (correct order: right, down, left) | L | 3hr | -hr | hr |
+| Logo or welcome message SVG animation | H | 3hr | hr |
+| Floating shape decorations on home page + interact with mouse | L | 3hr | hr |
 | Floating Tech Icons | L | 2hr | hr |
-| Pop open mobile nav | L | 3hr | hr |
-| Hamberger to "X" icon transformation | L | 3hr | hr |
-| Email Form | M | 4hr | hr |
-| Total | H | 20hrs| hrs |
+| Pop open mobile nav animation | L | 2hr | hr |
+| Hamberger to "X" icon transformation | L | 2hr | hr |
+| Project Flip Cards  | H | 2hr | hr |  
+| Email Form | M | 3hr | hr |
+| Total | H | 17hrs| hrs |
 
 ## Additional Libraries
- Is Sass considered a library? 
+  + jQuery
+  + Is Sass considered a library? 
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
-
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
 
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object

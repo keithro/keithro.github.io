@@ -38,6 +38,7 @@ section {
   box-shadow: 0 0.2rem 3rem 0 rgba(0, 0, 0, 0.35); }
 .section-header {
   font-family: "Nunito", sans-serif;
+  font-weight: 200;
   color: #1b4332; }
 
 @media screen and (min-width: 768px) {
@@ -49,7 +50,8 @@ section {
     height: 200vh;
     width: 200vw;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden; }
 
   .section-container {
     height: 80%;
@@ -63,7 +65,7 @@ section {
     grid-row: 1 / 2;
     grid-column: 2 / 3; }
 
-  #work {
+  #projects {
     grid-row: 2 / 3;
     grid-column: 2 / 3; }
 
