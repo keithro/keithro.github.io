@@ -23,41 +23,6 @@ Design, plan and build a portfolio website. The site will use Javascript/jQuery 
 
 ## Time/Priority Matrix 
 
-[Link](https://res.cloudinary.com/jkeohan/image/upload/a_270/v1591621734/project1_matrix_ocy5gc_h1kg0m.jpg)
-
-Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
-
-Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  This line will be used to assign a priority to to each feature you wish to include in the project.  
-
-Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
-
-Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
-
-### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
-#### MVP (examples)
-
-- Pull data using google json api
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
-
-#### PostMVP 
-
-- Anything else that is not MVP
-
-## Functional Components
-
-- Switch from mobile pop-open style menu for mobile to regular menu for desktop
-- Desktop nav will need to scroll right, down, left, up to the correct section on page and have an indicator to show what page you are on.
-- Scrolling with mouse wheel (and track pad?) will also scroll in correct order (right, down, left)
-- Layout will need to change for different screen sizes
-- Project section will have CSS hover animations
-- Contact sectil will have email and social media links and email form if time allows
-- Home page will have interactive floating decorations and/or SVG animation.
-
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
@@ -85,6 +50,18 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 | Project Flip Cards  | H | 2hr | hr |  
 | Email Form | M | 3hr | hr |
 | Total | H | 17hrs| hrs |
+
+
+## Functional Components
+
+- Switch from mobile pop-open style menu for mobile to regular menu for desktop
+- Desktop nav will need to scroll right, down, left, up to the correct section on page and have an indicator to show what page you are on.
+- Scrolling with mouse wheel (and track pad?) will also scroll in correct order (right, down, left)
+- Layout will need to change for different screen sizes
+- Project section will have CSS hover animations
+- Contact sectil will have email and social media links and email form if time allows
+- Home page will have interactive floating decorations and/or SVG animation.
+
 
 ## Additional Libraries
   + jQuery
