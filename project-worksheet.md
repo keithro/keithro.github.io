@@ -19,7 +19,7 @@
 Design, plan and build a portfolio website. The site will use Javascript/jQuery to move from section to section, to make AJAX call to a third-party API and to make interactive animations  on the site. It will feature completed projects, an about me sections and a contact section (hopefully) with an "email me" form.
 
 ## Wireframes
-
+[Project wireframe](img/project_wireframe.JPG)
 
 ## Time/Priority Matrix 
 
