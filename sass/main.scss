@@ -1,0 +1,10 @@
+/* Documentation says to use "@use" but it is not working */
+@import 'base';
+@import 'layout';
+@import 'component';
+
+@import 'home';
+@import 'about';
+@import 'work';
+@import 'contact';
+
