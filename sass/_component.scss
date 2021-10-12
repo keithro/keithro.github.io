@@ -1,29 +1,71 @@
-.mobile-nav {
+// BASIC NAV STYLING
+nav {
+  // display: none;
+  // justify-content: flex-end;
 
+  .nav-list {
+    display: flex;
+  }
+  
+  .nav-item {
+    list-style: none;
+   
+    a {
+      text-decoration: none;
+      // color: $brunswick-green;
+
+      &:hover {
+        // text-decoration: underline;
+      }
+    }
+  }
+
+  // @media screen and (min-width: $dsktp-bp) {
+  //   display: flex;
+  // }
+}
+
+// Mobile Nav Button
+.nav-btn {
+  position: fixed;
+}
+
+.mobile-nav {
+  position: fixed; // Does this need to be position fixed also?
+
+  .nav-list {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 
   @media screen and (min-width: $dsktp-bp) {
     display: none;
   }
 }
 
-.nav {
+.desktop-nav {
   display: none;
   justify-content: flex-end;
 
-  &-list {
-    display: flex;
-  }
+  // &-list {
+  //   display: flex;
+  // }
   
-  &-item {
-    list-style: none;
+  .nav-item {
+    // list-style: none;
    
     a {
-      text-decoration: none;
+      // text-decoration: none;
       color: $brunswick-green;
-
+      
       &:hover {
         text-decoration: underline;
       }
+      
+      // &:visited {
+      //   color: $brunswick-green;
+      // }
     }
   }
 

@@ -21,7 +21,8 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Mukta", sans-serif;
-  color: #081c15; }
+  color: #081c15;
+  position: relative; }
 
 body {
   display: grid;
@@ -35,6 +36,8 @@ section {
 
 .section-container {
   min-height: 80vh;
+  height: 90%;
+  width: 90%;
   box-shadow: 0 0.2rem 3rem 0 rgba(0, 0, 0, 0.35); }
 .section-header {
   font-family: "Nunito", sans-serif;
@@ -77,20 +80,35 @@ section {
     box-shadow: 0 0.5rem 5rem 0 rgba(0, 0, 0, 0.35); }
   .section-header {
     font-size: 6.4rem; } }
-.nav {
+nav .nav-list {
+  display: flex; }
+nav .nav-item {
+  list-style: none; }
+  nav .nav-item a {
+    text-decoration: none; }
+
+.nav-btn {
+  position: fixed; }
+
+.mobile-nav {
+  position: fixed; }
+  .mobile-nav .nav-list {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  @media screen and (min-width: 1028px) {
+    .mobile-nav {
+      display: none; } }
+
+.desktop-nav {
   display: none;
   justify-content: flex-end; }
-  .nav-list {
-    display: flex; }
-  .nav-item {
-    list-style: none; }
-    .nav-item a {
-      text-decoration: none;
-      color: #1b4332; }
-      .nav-item a:hover {
-        text-decoration: underline; }
+  .desktop-nav .nav-item a {
+    color: #1b4332; }
+    .desktop-nav .nav-item a:hover {
+      text-decoration: underline; }
   @media screen and (min-width: 1028px) {
-    .nav {
+    .desktop-nav {
       display: flex; } }
 
 /*# sourceMappingURL=style.css.map */
