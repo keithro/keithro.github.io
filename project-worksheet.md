@@ -14,6 +14,16 @@
 |Day 6| Present | Incomplete
 
 
+## Functional Components
+
+- Switch from mobile pop-open style menu for mobile to regular menu for desktop
+- Desktop nav will need to scroll right, down, left, up to the correct section on page and have an indicator to show what page you are on.
+- Scrolling with mouse wheel (and track pad?) will also scroll in correct order (right, down, left)
+- Layout will need to change for different screen sizes
+- Project section will have CSS hover animations
+- Contact sectil will have email and social media links and email form if time allows
+- Home page will have interactive floating decorations and/or SVG animation.
+
 ## Project Description
 
 Design, plan and build a portfolio website. The site will use Javascript/jQuery to move from section to section, to make AJAX call to a third-party API and to make interactive animations  on the site. It will feature completed projects, an about me sections and a contact section (hopefully) with an "email me" form.
@@ -32,35 +42,25 @@ Design, plan and build a portfolio website. The site will use Javascript/jQuery 
 | Desktop Nav | H | 1hr | 1hr ]
 | Working with API | H | 1.5hrs|  hr | 
 | Responsive | H | 3hr | hr |
-| Nav links move to proper section with jQuery | L | 2hr |  hr |
+| Nav links move to proper section with jQuery | H | 2hr |  hr |
 | Mouse scroll (correct order: right, down, left) | L | 3hr | -hr | hr |
 | About, Project and Contact Sections  | H | 2hr | hr |  
-| Social Media Icons/links | L | 1hr |  hr |
+| Social Media Icons/links | H | 1hr |  hr |
 | Design & Make Favicon | L | 1.5hr |  hr |
 | Total | H | 20hrs| hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Logo or welcome message SVG animation | H | 3hr | hr |
-| Floating shape decorations on home page + interact with mouse | L | 3hr | hr |
+| Logo or welcome message SVG animation | L | 3hr | hr |
+| Floating shape decorations on home page + interact with mouse | H | 3hr | hr |
 | Floating Tech Icons | L | 2hr | hr |
-| Pop open mobile nav animation | L | 2hr | hr |
+| Pop open mobile nav animation | H | 2hr | hr |
 | Hamberger to "X" icon transformation | L | 2hr | hr |
-| Project Flip Cards  | H | 2hr | hr |  
-| Email Form | M | 3hr | hr |
+| Project Flip Cards  | L | 2hr | hr |  
+| Email Form | L | 3hr | hr |
 | Total | H | 17hrs| hrs |
 
-
-## Functional Components
-
-- Switch from mobile pop-open style menu for mobile to regular menu for desktop
-- Desktop nav will need to scroll right, down, left, up to the correct section on page and have an indicator to show what page you are on.
-- Scrolling with mouse wheel (and track pad?) will also scroll in correct order (right, down, left)
-- Layout will need to change for different screen sizes
-- Project section will have CSS hover animations
-- Contact sectil will have email and social media links and email form if time allows
-- Home page will have interactive floating decorations and/or SVG animation.
 
 
 ## Additional Libraries
