@@ -1,4 +1,10 @@
+.mobile-nav {
 
+
+  @media screen and (min-width: $dsktp-bp) {
+    display: none;
+  }
+}
 
 .nav {
   display: none;
