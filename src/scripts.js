@@ -1,13 +1,20 @@
 
-// Page Scroll (for Desktop)
+const scrollPage = (end) => {
+  $('html, body').animate({
+    scrollTop: $(end).offset().top,
+    scrollLeft: $(end).offset().left,
+  }, 500);
+}
+
+// PAGE SCROLL (for Desktop)
 // =====================================
 $('.nav-link').on('click', (e) => {
-  const scrollPage = (end) => {
-    $('html, body').animate({
-      scrollTop: $(end).offset().top,
-      scrollLeft: $(end).offset().left,
-    }, 500);
-  }
+  // const scrollPage = (end) => {
+  //   $('html, body').animate({
+  //     scrollTop: $(end).offset().top,
+  //     scrollLeft: $(end).offset().left,
+  //   }, 500);
+  // }
 
   if (e.target.hash !== '') {
     e.preventDefault();
@@ -41,3 +48,13 @@ $('.nav-link').on('click', (e) => {
     window.location.hash = end; // Might need this to add nav location indicator
   }
 });
+
+// TOGGLE OPEN/CLOSE MOBILE NAV MENU
+$('.mobile-nav-btn').on('click', () => {
+  console.log('you clicked the nav button! You ANIMAL!!');
+  
+  $('.mobile-nav-background').toggleClass('open');
+  $('.mobile-nav-list').toggleClass('open');
+})
+
+

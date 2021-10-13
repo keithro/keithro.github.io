@@ -26,7 +26,7 @@ section {
   }
 }
 
-@media screen and (min-width: $tblt-bp) {
+@media screen and (min-width: $tablet-bp) {
   .section {
     &-container {
       box-shadow: 0 .3rem 4rem 0 rgba(0, 0, 0, 0.35);
@@ -38,7 +38,7 @@ section {
   }
 }
 
-@media screen and (min-width: $dsktp-bp) {
+@media screen and (min-width: $desktop-bp) {
   body {
     /* TODO: keep on tablet or move to tablet? */
     height: 200vh;

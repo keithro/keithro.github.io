@@ -33,8 +33,8 @@ $dark-jungle-green: rgba(8, 28, 21, 1);
 $gray: rgb(105, 105, 105);
 
 // Media Query Break Points
-$tblt-bp: 768px;
-$dsktp-bp: 1028px;
+$tablet-bp: 768px;
+$desktop-bp: 1028px;
 
 *,
 *::before,
@@ -47,11 +47,11 @@ $dsktp-bp: 1028px;
 html {
   font-size: 50%; // seting 1rem = 8px (8px / 16px)
 
-  @media screen and (min-width: $tblt-bp) {
+  @media screen and (min-width: $tablet-bp) {
     font-size: 56.25%; // setting 1rem = 9px (9px / 16px)
   }
 
-  @media screen and (min-width: $dsktp-bp) {
+  @media screen and (min-width: $desktop-bp) {
     font-size: 62.5%; // setting 1rem = 10px
   }
 }
@@ -63,7 +63,7 @@ body {
   position: relative;
 }
 
-// // It doesn't look like you can controll the jQuery animations
+// // It doesn't look like you can controll the jQuery animations with CSS transitions
 // html,
 // body {
 //   transition: scrollTop 5s ease;
