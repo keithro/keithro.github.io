@@ -1,8 +1,5 @@
-// BASIC NAV STYLING
+// BASIC NAV STYLING /////////////////////////
 nav {
-  // display: none;
-  // justify-content: flex-end;
-
   .nav-list {
     display: flex;
   }
@@ -12,64 +9,111 @@ nav {
    
     a {
       text-decoration: none;
-      // color: $brunswick-green;
+    }
+  }
+}
 
-      &:hover {
-        // text-decoration: underline;
+// MOBILE NAV ///////////////////////////////
+.mobile-nav {
+  // position: fixed; // Does this need to be position fixed also?
+  @media screen and (min-width: $dsktp-bp) {
+    display: none;
+  }
+
+  // MOBILE NAV BUTTON
+  &-btn {
+    position: fixed;
+    height: 6.5rem; // TODO: SLIGHTLY INCREASE SIZE & LOCATION FOR TABLET
+    width: 6.5rem;
+    top: 5.5rem;
+    right: 5.5rem;
+    border-radius: 50%;
+    background-color: #fff; // TODO: CHANGE COLOR
+    box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: .1);
+    z-index: 102;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-icon {
+      position: absolute;
+      width: 3.8rem;
+      height: .6rem;
+      background-color: #333; // TODO: CHANGE COLOR
+      border-radius: .3rem;
+      transition: 0.4s;
+
+      &:first-child {
+        top: 1.8rem;
+      }
+
+      &:last-child {
+        top: 4.0rem;
       }
     }
   }
 
-  // @media screen and (min-width: $dsktp-bp) {
-  //   display: flex;
-  // }
-}
+  &-background {
+    position: fixed;
+    height: 5rem;
+    width: 5rem;
+    top: 6rem; // TODO: WILL NEED TO MOVE FOR TABLET ALSO
+    right: 6rem;
+    border-radius: 50%;
+    background-color: #c1c1e0; // TODO: CHANGE COLOR TO GRADIENT
+    z-index: 100;
 
-// Mobile Nav Button
-.nav-btn {
-  position: fixed;
-}
-
-.mobile-nav {
-  position: fixed; // Does this need to be position fixed also?
-
-  .nav-list {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    transform: scale(50);
   }
 
-  @media screen and (min-width: $dsktp-bp) {
-    display: none;
+  // MOBILE NAV
+  .nav {
+    &-list {
+      color: #ffffff;
+      font-size: 2.8rem;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      // top: -100%; // Add this after creating animation
+      top: 0;
+      left: 0;
+      z-index: 101;
+
+      flex-direction: column;
+      justify-content: space-around; // Maybe center and just give nav-items margin
+      align-items: center;
+    }
+
+    &-item a {
+      color: #eee; // TODO: CHANGE COLOR
+    }
   }
 }
 
+// DESKTOP NAV ////////////////////////////////
 .desktop-nav {
   display: none;
   justify-content: flex-end;
 
-  // &-list {
-  //   display: flex;
-  // }
-  
+  @media screen and (min-width: $dsktp-bp) {
+    display: flex;
+  }
+ 
   .nav-item {
-    // list-style: none;
    
     a {
-      // text-decoration: none;
-      color: $brunswick-green;
+      color: $brunswick-green; // move down into &:link, &:visited { ... }
       
-      &:hover {
+      &:hover
+      &:active {
         text-decoration: underline;
       }
       
-      // &:visited {
+      // &:visited { 
       //   color: $brunswick-green;
       // }
     }
-  }
-
-  @media screen and (min-width: $dsktp-bp) {
-    display: flex;
   }
 }

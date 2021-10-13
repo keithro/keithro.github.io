@@ -13,10 +13,9 @@ section {
 
 .section {
   &-container {
-    min-height: 80vh;
-    height: 90%;
+    min-height: 80vh; // TODO: DELETE ONCE YOU HAVE ADDED CONTENT TO SECTIONS
+    height: 90%; // TODO: DELETE ONCE YOU HAVE ADDED CONTENT TO SECTIONS
     width: 90%;
-    // width: 80%; // Not sure why but this is making it larger than the screen
     box-shadow: 0 .2rem 3rem 0 rgba(0, 0, 0, 0.35);
   }
 
