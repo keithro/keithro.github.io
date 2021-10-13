@@ -96,8 +96,8 @@ nav li {
     position: fixed;
     height: 6.5rem;
     width: 6.5rem;
-    top: 5.5rem;
-    right: 5.5rem;
+    top: 4rem;
+    right: 4rem;
     border-radius: 50%;
     background-color: #fff;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
@@ -121,8 +121,8 @@ nav li {
     position: fixed;
     height: 5rem;
     width: 5rem;
-    top: 6rem;
-    right: 6rem;
+    top: 4.7rem;
+    right: 4.7rem;
     border-radius: 50%;
     background-color: #c1c1e0;
     z-index: 100;
@@ -142,7 +142,7 @@ nav li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0.2s; }
+    transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0.2s; }
     .mobile-nav-list.open {
       height: 100%;
       opacity: 1; }

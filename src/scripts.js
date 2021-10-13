@@ -1,4 +1,4 @@
-
+// On second thought, I don't think I need this outside the event handler. Scrolling still works with mobile nav.
 const scrollPage = (end) => {
   $('html, body').animate({
     scrollTop: $(end).offset().top,
@@ -6,7 +6,7 @@ const scrollPage = (end) => {
   }, 500);
 }
 
-// PAGE SCROLL (for Desktop)
+// PAGE SCROLL
 // =====================================
 $('.nav-link').on('click', (e) => {
   // const scrollPage = (end) => {
@@ -51,10 +51,11 @@ $('.nav-link').on('click', (e) => {
 
 // TOGGLE OPEN/CLOSE MOBILE NAV MENU
 $('.mobile-nav-btn').on('click', () => {
-  console.log('you clicked the nav button! You ANIMAL!!');
-  
   $('.mobile-nav-background').toggleClass('open');
   $('.mobile-nav-list').toggleClass('open');
-})
+});
 
-
+$('.mobile-nav-item').on('click', () => {
+  $('.mobile-nav-background').removeClass('open');
+  $('.mobile-nav-list').removeClass('open');
+});

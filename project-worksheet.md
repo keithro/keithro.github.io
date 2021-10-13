@@ -38,11 +38,12 @@ Design, plan and build a portfolio website. The site will use Javascript/jQuery 
 | --- | :---: |  :---: | :---: | 
 | Project Previews & design inspiration | H | 4hr | 4+hr |
 | Project Worksheet | H | 1hr | 2+hr |
-| Hamburger/mobile Nav | H | 2hr | hr |
 | Desktop Nav | H | 1hr | 1hr ]
+| Nav links move to proper section with jQuery | H | 2hr |  8hr |
+| Hamburger/mobile Nav | H | 2hr | 4hr |
+| Open/close mobile Nav & animations | H | 2hr | 4hr |
 | Working with API | H | 1.5hrs|  hr | 
 | Responsive | H | 3hr | hr |
-| Nav links move to proper section with jQuery | H | 2hr |  hr |
 | Mouse scroll (correct order: right, down, left) | L | 3hr | -hr | hr |
 | About, Project and Contact Sections  | H | 2hr | hr |  
 | Social Media Icons/links | H | 1hr |  hr |
@@ -55,9 +56,8 @@ Design, plan and build a portfolio website. The site will use Javascript/jQuery 
 | Logo or welcome message SVG animation | L | 3hr | hr |
 | Floating shape decorations on home page + interact with mouse | H | 3hr | hr |
 | Floating Tech Icons | L | 2hr | hr |
-| Pop open mobile nav animation | H | 2hr | hr |
 | Hamberger to "X" icon transformation | L | 2hr | hr |
-| Project Flip Cards  | L | 2hr | hr |  
+| Project Modals  | L | 2hr | hr |  
 | Email Form | L | 3hr | hr |
 | Total | H | 17hrs| hrs |
 
