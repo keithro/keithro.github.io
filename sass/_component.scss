@@ -60,10 +60,20 @@ nav {
       &:last-child {
         top: 4.0rem;
       }
+      
+      &:first-child.open {
+        top: 3rem;
+        transform: rotate(135deg);
+      }
 
-      // &.open {
-      //   background-color: red; // Checking to see if it works
-      // }
+      &:nth-child(2).open {
+        background-color: transparent;
+      }
+
+      &:last-child.open {
+        top: 3rem;
+        transform: rotate(-135deg);
+      }
     }
   }
 
@@ -135,10 +145,11 @@ nav {
 // DESKTOP NAV ////////////////////////////////
 .desktop-nav {
   display: none;
-  justify-content: flex-end;
-
+  
   @media screen and (min-width: $desktop-bp) {
     display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
  
   .nav {
@@ -150,6 +161,7 @@ nav {
       &:link,
       &:visited { 
         color: $dark-green;
+        margin: 0 2rem;
       }
       &:hover,
       &:active {

@@ -1,11 +1,11 @@
+// MOBILE ///////////////////////////////////////////////
 body {
-  display: grid;
-  grid-template-rows: repeat(4, 4fr);
-  grid-template-columns: repeat(1, 1fr); 
-
+  position: relative;
+  @include flexCentered;
 }
 
 section {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,11 +17,10 @@ section {
     // height: 90%; // TODO: DELETE ONCE YOU HAVE ADDED CONTENT TO SECTIONS
     width: 100%;
 
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    @include flexCentered;
+    // @media screen and (min-width: $desktop-bp) {
+    //   display: grid;
+    //   grid-template-rows: 1fr 6fr;
+    // }
   }
 
   &-header {
@@ -32,6 +31,7 @@ section {
   }
 }
 
+// TABLET ///////////////////////////////////////////////
 @media screen and (min-width: $tablet-bp) {
   .section {
     &-container {
@@ -39,10 +39,6 @@ section {
       width: 90%;
       margin: 5rem 5rem 0 5rem;
     }
-
-    // &-header {
-    //   font-size: ;
-    // }
   }
 
   // section:last-child .section-container { // Selector not working...
@@ -51,19 +47,36 @@ section {
   }
 }
 
+// DESKTOP ///////////////////////////////////////////////
 @media screen and (min-width: $desktop-bp) {
   body {
-    /* TODO: keep on tablet or move to tablet? */
     height: 200vh;
     width: 200vw;
+    display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    overflow: hidden;
+    // overflow: hidden; // TODO: DON'T FORGET TO ADD THIS BACK
   }
 
-  .section-container {
-    height: 80%;
-    width: 80%;
+  section {
+    max-height: 100vh; // FIXME: WHY ISNT THIS KEEPING IT FROM GROWING???????
+  }
+
+  .section {
+    &-container {
+      height: 85%;
+      width: 80%;
+      max-height: 85%;
+      max-width: 80%;
+      box-shadow: 0 .5rem 5rem 0 rgba(0, 0, 0, 0.35);
+
+      display: grid;
+      grid-template-rows: 1fr 7fr;
+    }
+
+    &-header {
+      font-size: 6.4rem;
+    }
   }
 
   #home {
@@ -86,13 +99,4 @@ section {
     grid-column: 1 / 2;
   }
 
-  .section {
-    &-container {
-      box-shadow: 0 .5rem 5rem 0 rgba(0, 0, 0, 0.35);
-    }
-
-    &-header {
-      font-size: 6.4rem;
-    }
-  }
 }

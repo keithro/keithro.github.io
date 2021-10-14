@@ -52,6 +52,9 @@ $dark-gray: rgb(59, 58, 58);
 $tablet-bp: 768px;
 $desktop-bp: 1028px;
 
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+$small-shadow: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.35);
+
 /* ========== MIXINS ========== */ 
 @mixin flexCentered($direction: column) {
   display: flex;
@@ -87,5 +90,4 @@ body {
   font-size: 1.6rem;
   font-family: $content-font;
   color: $dark-gray;
-  position: relative;
 }
