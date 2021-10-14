@@ -1,11 +1,9 @@
 // BASIC NAV STYLING /////////////////////////
 nav {
-  // .nav-list {
   ul {
     display: flex;
   }
   
-  // .nav-item {
   li {
     list-style: none;
    
@@ -17,7 +15,7 @@ nav {
 
 // MOBILE NAV ///////////////////////////////
 .mobile-nav {
-  position: fixed; // Does this need to be position fixed also?
+  position: fixed;
 
   @media screen and (min-width: $desktop-bp) {
     display: none;
@@ -26,35 +24,46 @@ nav {
   // MOBILE NAV BUTTON
   &-btn {
     position: fixed;
-    height: 6.5rem; // TODO: SLIGHTLY INCREASE SIZE & LOCATION FOR TABLET
+    height: 6.5rem;
     width: 6.5rem;
-    top: 4rem;
-    right: 4rem;
+    top: 3rem;
+    right: 3rem;
     border-radius: 50%;
     background-color: #fff; // TODO: CHANGE COLOR
     box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: .1);
-    z-index: 102;
-
+    z-index: 200;
+    // Inner
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    @media screen and (min-width: $tablet-bp) {
+      // height: 7rem;
+      // width: 7rem;
+      top: 4rem;
+      right: 4rem;
+    }
+
     &-icon {
       position: absolute;
       width: 3.8rem;
-      height: .6rem;
-      background-color: #333; // TODO: CHANGE COLOR
+      height: .5rem;
+      background-color: $dark-gray; // TODO: CHANGE COLOR
       border-radius: .3rem;
-      transition: 0.4s;
+      transition: all 0.4s;
 
       &:first-child {
-        top: 1.8rem;
+        top: 2rem;
       }
 
       &:last-child {
         top: 4.0rem;
       }
+
+      // &.open {
+      //   background-color: red; // Checking to see if it works
+      // }
     }
   }
 
@@ -62,15 +71,21 @@ nav {
     position: fixed;
     height: 5rem;
     width: 5rem;
-    top: 4.7rem; // TODO: WILL NEED TO MOVE FOR TABLET ALSO
-    right: 4.7rem;
+    top: 4rem;
+    right: 4rem;
     border-radius: 50%;
-    background-color: #c1c1e0; // TODO: CHANGE COLOR TO RADIAL GRADIENT
+    // background-color: #c1c1e0; // TODO: CHANGE COLOR TO RADIAL GRADIENT
+    background: radial-gradient($light-purple, rgb(171, 101, 241)); // TODO: CHANGE COLOR TO RADIAL GRADIENT
     z-index: 100;
     
     // transition: <property> <duration> <timing-function> <delay>;
     transition: transform 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     // transition: transform 0.6s cubic-bezier(0.36, 0, 0.66, -0.56);
+
+    @media screen and (min-width: $tablet-bp) {
+      top: 4.7rem;
+      right: 4.7rem;
+    }
 
     &.open {
       transform: scale(50);
@@ -87,7 +102,7 @@ nav {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 101;
+    z-index: 150;
     
     flex-direction: column;
     justify-content: center;
@@ -109,6 +124,11 @@ nav {
     @media screen and (min-width: $tablet-bp) {
       margin: 2rem;
     }
+
+  }
+  &-link {
+    color: $dark-green;
+
   }
 }
 
@@ -129,7 +149,7 @@ nav {
     &-link {
       &:link,
       &:visited { 
-        color: $brunswick-green;
+        color: $dark-green;
       }
       &:hover,
       &:active {

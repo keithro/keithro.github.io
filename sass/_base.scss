@@ -1,25 +1,23 @@
-/* FONTS */ 
+/* ========== VARIABLES ========== */ 
+
+/* Fonts */ 
 // TODO: Delete what you don't use
-// font-family: 'Mukta', sans-serif;
-// font-family: 'Nunito', sans-serif;
+// font-family: 'Mukta', sans-serif; // 200;300;400
+// font-family: 'Nunito', sans-serif; // 200;300;400;700;900
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Playfair Display', serif;
+// font-family: 'Cormorant Garamond', serif;
 
-$heading-font: 'Nunito', sans-serif;
-$content-font: 'Mukta', sans-serif;
+// $heading-font: 'Mukta', sans-serif;
+// $heading-font: 'Nunito', sans-serif;
+// $heading-font: 'Open Sans', sans-serif;
+// $heading-font: 'Playfair Display', serif;
+$heading-font: 'Cormorant Garamond', serif;
 
-/* SCSS HEX */
-// $nyanza: #d8f3dcff;
-// $turquoise-green: #b7e4c7ff;
-// $turquoise-green-2: #95d5b2ff;
-// $ocean-green: #74c69dff;
-// $ocean-green-2: #52b788ff;
-// $illuminating-emerald: #40916cff;
-// $bottle-green: #2d6a4fff;
-// $brunswick-green: #1b4332ff;
-// $dark-jungle-green: #081c15ff;
+$content-font: 'Nunito', sans-serif;
+// $content-font: 'Mukta', sans-serif;
 
-/* SCSS RGB */
+/* Greens */
 $nyanza: rgba(216, 243, 220, 1);
 $turquoise-green: rgba(183, 228, 199, 1);
 $turquoise-green-2: rgba(149, 213, 178, 1);
@@ -30,12 +28,40 @@ $bottle-green: rgba(45, 106, 79, 1);
 $brunswick-green: rgba(27, 67, 50, 1);
 $dark-jungle-green: rgba(8, 28, 21, 1);
 
+// /* Dark Green with Accents */
+// $languid-lavender: rgba(230, 212, 236, 1);
+// $wisteria: rgba(194, 160, 228, 1);
+// $middle-blue: rgba(136, 217, 230, 1);
+// $salmon: rgba(253, 137, 114, 1);
+// $rich-black: rgba(24, 58, 58, 1);
+
+/* Dark Green with Accents */
+$dark-green: rgba(27, 67, 50, 1);
+$light-purple: rgba(230, 212, 236, 1);
+$medium-purple: rgba(194, 160, 228, 1);
+// $dark-purple: rgb(143, 82, 203);
+$dark-purple: rgb(105, 54, 156);
+$blue: rgba(136, 217, 230, 1);
+$red: rgba(253, 137, 114, 1);
+
+// Grays
 $gray: rgb(105, 105, 105);
+$dark-gray: rgb(59, 58, 58);
 
 // Media Query Break Points
 $tablet-bp: 768px;
 $desktop-bp: 1028px;
 
+/* ========== MIXINS ========== */ 
+@mixin flexCentered($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Simple Reset */ 
 *,
 *::before,
 *::after {
@@ -44,6 +70,7 @@ $desktop-bp: 1028px;
   box-sizing: border-box;
 }
 
+/* Set Rem & Font Sizes */ 
 html {
   font-size: 50%; // seting 1rem = 8px (8px / 16px)
 
@@ -59,13 +86,6 @@ html {
 body {
   font-size: 1.6rem;
   font-family: $content-font;
-  color: $dark-jungle-green;
+  color: $dark-gray;
   position: relative;
 }
-
-// // It doesn't look like you can controll the jQuery animations with CSS transitions
-// html,
-// body {
-//   transition: scrollTop 5s ease;
-//   transition: scrollLeft 5s ease;
-// }

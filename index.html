@@ -10,11 +10,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&family=Nunito:wght@200;300;400;700;900&family=Open+Sans&family=Playfair+Display&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&family=Nunito:wght@200;300;400;700;900&family=Open+Sans&family=Playfair+Display&family=Cormorant+Garamond:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Mobile Nav -->
   <nav class="mobile-nav">
     <div class="mobile-nav-btn">
       <!-- <span class="mobile-nav-btn-icon">X</span> -->
@@ -24,26 +25,15 @@
     </div>
     <div class="mobile-nav-background"></div>
 
-    <!-- Not sure if I need the div.mobile-nav-menu
-    <div class="mobile-nav-menu">
-      <ul class="mobile-nav-list">
-        <li class="mobile-nav-item"><a id="home-link" href="#home" class="mobile-nav-link">Home</a></li>
-        <li class="mobile-nav-item"><a id="about-link" href="#about" class="mobile-nav-link">About</a></li>
-        <li class="mobile-nav-item"><a id="projects-link" href="#projects" class="mobile-nav-link">Projects</a></li>
-        <li class="mobile-nav-item"><a id="contact-link" href="#contact" class="mobile-nav-link">Contact</a></li>
-      </ul>
-    </div> -->
-
-    <!-- Not sure if I need the div.mobile-nav-menu -->
     <ul class="mobile-nav-list">
       <li class="mobile-nav-item"><a id="home-link" href="#home" class="mobile-nav-link">Home</a></li>
       <li class="mobile-nav-item"><a id="about-link" href="#about" class="mobile-nav-link">About</a></li>
       <li class="mobile-nav-item"><a id="projects-link" href="#projects" class="mobile-nav-link">Projects</a></li>
       <li class="mobile-nav-item"><a id="contact-link" href="#contact" class="mobile-nav-link">Contact</a></li>
     </ul>
-    
   </nav>
 
+<!-- HOME SECTION -->
   <section id="home">
     <div class="section-container">
 
@@ -56,12 +46,20 @@
         </ul>
       </nav>
 
-      <!-- <h1 id="home-section-header " class="section-header">Keith Rodriguez</h1> -->
-      <h1 id="home-section-header " class="section-header">Hellow World</h1>
+      <div class="section-content-container">
+        <h1 id="home-section-header" class="section-header">Hellow World</h1>
+
+      </div>
       
     </div>
+
+    <!-- make sure the image name & path is still the same -->
+    <!-- <div class="scroll-arrow scroll-right-arrow">
+      <img src="img/SVG/chevron-right.svg" alt="Navigation arrow right" />
+    </div> -->
   </section>
-  
+
+  <!-- ABOUT SECTION -->
   <section id="about">
     <div class="section-container">
 
@@ -74,11 +72,37 @@
         </ul>
       </nav>
 
-      <h2 class="section-header">About</h2>
+      <div class="section-content-container">
+        <div class="introduction">
+          <h2 class="section-header">Hi!</h2>
+          <h4 class="section-subheading">My name is Keith and I am a software engineer</h4>
+          <p>I enjoy making things on the web and in real life ;)</p>
+        </div>
+
+        <article class="skills" id="skill-section-1">
+          <div class="skills-img-container">
+            <img class="skills-img" src="img/SVG/monitor.svg" alt="Computer monitor"></div>
+          <h3 class="skills-heading">Front End Development</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae nobis, laboriosam, praesentium veniam quas soluta consequatur incidunt sed accusamus, ab tempore laudantium consequuntur.</p>
+        </article>
+        <article class="skills" id="skill-section-2">
+          <div class="skills-img-container">
+            <img class="skills-img" src="img/SVG/database.svg" alt="Computer monitor"></div>
+          <h3 class="skills-heading">Back End Development</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae nobis, laboriosam, praesentium veniam quas soluta consequatur incidunt sed accusamus, ab tempore laudantium consequuntur.</p>
+        </article>
+        <article class="skills" id="skill-section-3">
+          <div class="skills-img-container">
+            <img class="skills-img" src="img/SVG/edit.svg" alt="Computer monitor"></div>
+          <h3 class="skills-heading">Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae nobis, laboriosam, praesentium veniam quas soluta consequatur incidunt sed accusamus, ab tempore laudantium consequuntur.</p>
+        </article>
+      </div>
       
     </div>
   </section>
-  
+
+  <!-- PROJECT SECTION -->
   <section id="projects">
     <div class="section-container">
 
@@ -91,11 +115,15 @@
         </ul>
       </nav>
 
-      <h2 class="section-header">Projects</h2>
+      <div class="section-content-container">
+        <h2 class="section-header">Projects</h2>
+
+      </div>
       
     </div>
   </section>
-  
+
+  <!-- CONTACT SECTION -->
   <section id="contact">
     <div class="section-container">
 
@@ -108,7 +136,10 @@
           </ul>
       </nav>
 
-      <h2 class="section-header">Contact</h2>
+      <div class="section-content-container">
+        <h2 class="section-header">Contact</h2>
+
+      </div>
       
     </div>
   </section>

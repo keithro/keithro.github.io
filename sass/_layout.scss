@@ -14,15 +14,21 @@ section {
 .section {
   &-container {
     min-height: 80vh; // TODO: DELETE ONCE YOU HAVE ADDED CONTENT TO SECTIONS
-    height: 90%; // TODO: DELETE ONCE YOU HAVE ADDED CONTENT TO SECTIONS
-    width: 90%;
-    box-shadow: 0 .2rem 3rem 0 rgba(0, 0, 0, 0.35);
+    // height: 90%; // TODO: DELETE ONCE YOU HAVE ADDED CONTENT TO SECTIONS
+    width: 100%;
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    @include flexCentered;
   }
 
   &-header {
     font-family: $heading-font;
-    font-weight: 200;
-    color: $brunswick-green;
+    font-weight: 300;
+    font-size: 6rem;
+    color: $dark-green;
   }
 }
 
@@ -30,11 +36,18 @@ section {
   .section {
     &-container {
       box-shadow: 0 .3rem 4rem 0 rgba(0, 0, 0, 0.35);
+      width: 90%;
+      margin: 5rem 5rem 0 5rem;
     }
 
     // &-header {
     //   font-size: ;
     // }
+  }
+
+  // section:last-child .section-container { // Selector not working...
+  #contact .section-container {
+    margin-bottom: 5rem;
   }
 }
 

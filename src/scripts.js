@@ -53,9 +53,11 @@ $('.nav-link').on('click', (e) => {
 $('.mobile-nav-btn').on('click', () => {
   $('.mobile-nav-background').toggleClass('open');
   $('.mobile-nav-list').toggleClass('open');
+  $('.mobile-nav-btn-icon').toggleClass('open');
 });
 
 $('.mobile-nav-item').on('click', () => {
   $('.mobile-nav-background').removeClass('open');
   $('.mobile-nav-list').removeClass('open');
+  $('.mobile-nav-btn-icon').removeClass('open');
 });

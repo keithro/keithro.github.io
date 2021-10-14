@@ -1,0 +1,59 @@
+
+#about {
+
+  .introduction {
+    position: relative;
+    border: 1px solid $medium-purple;
+    margin: 3.5rem;
+    padding: 3.5rem;
+    padding-top: 1.5rem;;
+  }
+  
+  .introduction {
+    text-align: center;
+
+  }
+
+  .section-header {
+    position: relative;
+    left: -5rem;
+    text-align: left;
+    background-color: #fff;
+  }
+
+  .section-subheading {
+    font-size: 2rem;
+    color: $dark-purple;
+  }
+
+  .skills {
+    position: relative;
+    text-align: center;
+    background-color: rgba(#000, .05);
+    margin: 3.5rem;
+    padding: 3.5rem;
+    padding-top: 0;
+    @include flexCentered;
+
+    &-img-container { // TODO: CHANGE COLOR, ADD/FIX MARGINS
+      height: 9rem;
+      width: 9rem;
+      position: relative;
+      top: -3rem;
+      background-color: #fff;
+      border-radius: 50%;
+      @include flexCentered;
+    }
+
+    &-img {
+      // color: $dark-green;
+      fill: var($dark-green);
+      height: 5rem;
+      width: 5rem;
+    }
+
+    &-heading {
+      color: $dark-purple;
+    }
+  }
+}
