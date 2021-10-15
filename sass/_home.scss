@@ -1,5 +1,22 @@
 #home {
+  height: 100vh;
   .section {
+
+    &-content-container {
+      height: 90%; // FIXME: Why does 100% go full width of viewport + margin?
+      border: 1px solid $dark-green;
+      margin: 4rem;
+      @include flexCentered;
+
+      @media screen and (min-width: $desktop-bp) {
+        
+      }
+      
+      @media screen and (min-width: $desktop-bp) {
+        margin: 5rem;
+        margin-top: 1rem;
+      }
+    }
     &-header {
       font-size: 6rem;
     }

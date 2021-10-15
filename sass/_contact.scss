@@ -29,5 +29,10 @@
       border-radius: 100%;
       @include flexCentered(row);
     }
+
+    &-img {
+      height: 4rem;
+      width: 4rem;
+    }
   }
 }

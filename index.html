@@ -37,6 +37,13 @@
   <section id="home">
     <div class="section-container">
 
+      <a href="#about" class="nav-arrow nav-arrow-right">
+        <img src="img/SVG/chevron-right.svg" alt="Navigation arrow right" />
+      </a>
+      <!-- <a href="#contact" class="nav-arrow nav-arrow-down">
+        <img src="img/SVG/chevron-down.svg" alt="Navigation arrow down" />
+      </a> -->
+
       <nav class="desktop-nav">
         <ul class="nav-list">
           <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
@@ -48,7 +55,7 @@
 
       <div class="section-content-container">
         <h1 id="home-section-header" class="section-header">Hellow World</h1>
-
+        <p>Welcome to my page!</p>
         <div class="hero-shape">
           <img class="hero-shape-img" src="img/SVG/triangle.svg" alt="Decorative image of a shape">
         </div>
@@ -56,17 +63,17 @@
       
     </div>
 
-    <!-- <a href="#about" class="nav-arrow">
-      <img src="img/SVG/chevron-right.svg" alt="Navigation arrow right" />
-    </a>
-    <a href="#contact" class="nav-arrow">
-      <img src="img/SVG/chevron-down.svg" alt="Navigation arrow right" />
-    </a> -->
   </section>
 
   <!-- ABOUT SECTION -->
   <section id="about">
     <div class="section-container">
+      <a href="#home" class="nav-arrow nav-arrow-left">
+        <img src="img/SVG/chevron-left.svg" alt="Navigation arrow left" />
+      </a>
+      <a href="#projects" class="nav-arrow nav-arrow-down">
+        <img src="img/SVG/chevron-down.svg" alt="Navigation arrow down" />
+      </a>
 
       <nav class="desktop-nav">
         <ul class="nav-list">
@@ -75,6 +82,7 @@
           <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+
       </nav>
 
       <div class="section-content-container">
@@ -113,6 +121,12 @@
   <!-- PROJECT SECTION -->
   <section id="projects">
     <div class="section-container">
+      <a href="#contact" class="nav-arrow nav-arrow-left">
+        <img src="img/SVG/chevron-left.svg" alt="Navigation arrow left" />
+      </a>
+      <a href="#about" class="nav-arrow nav-arrow-up">
+        <img src="img/SVG/chevron-up.svg" alt="Navigation arrow up" />
+      </a>
 
       <nav class="desktop-nav">
         <ul class="nav-list">
@@ -127,11 +141,45 @@
         <h2 class="section-header">Projects</h2>
 
         <div class="projects-container">
+
           <article class="project-card">
-            <img src="img/weather-app.jpg" alt="Image of Project Example 1">
-            <h3>Project Example 1</h3>
-            <p>I'm baby vice truffaut air plant, bitters waistcoat vaporware crucifix. Swag hella gentrify copper mug semiotics
-            portland pop-up migas.</p>
+            <img class="project-img" src="img/weather-app.jpg" alt="Image of Project Example 1">
+            <div class="project-description">
+              <h3>Project Example 1</h3>
+              <p>I'm baby vice truffaut air plant, bitters waistcoat vaporware crucifix. Swag hella gentrify copper mug semiotics
+              portland pop-up migas.</p>
+              <p>See it live <a href="https://mystifying-chandrasekhar-87b111.netlify.com/">here</a> or check out the <a href="https://github.com/keithro/weather-app">code</a>.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-img" src="img/kwiki-search.jpg" alt="Image of Project Example 2">
+            <div class="project-description">
+              <h3>Project Example 1</h3>
+              <p>I'm baby vice truffaut air plant, bitters waistcoat vaporware crucifix. Swag hella gentrify copper mug semiotics
+              portland pop-up migas.</p>
+              <p>See it live <a href="http://www.keithrodriguez.me/kwiki-search/">here</a> or check out the <a href="https://github.com/keithro/kwiki-search">code</a>.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-img" src="img/mkdwn-previewer.jpg" alt="Image of Project Example 3">
+            <div class="project-description">
+              <h3>Project Example 1</h3>
+              <p>I'm baby vice truffaut air plant, bitters waistcoat vaporware crucifix. Swag hella gentrify copper mug semiotics
+              portland pop-up migas.</p>
+              <p>See it live <a href="http://www.keithrodriguez.me/markdown-previewer/public/">here</a> or check out the <a href="https://github.com/keithro/markdown-previewer">code</a>.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-img" src="img/js30.jpg" alt="Image of Project Example 4">
+            <div class="project-description">
+              <h3>Project Example 1</h3>
+              <p>I'm baby vice truffaut air plant, bitters waistcoat vaporware crucifix. Swag hella gentrify copper mug semiotics
+              portland pop-up migas.</p>
+              <p>See it live <a href="https://myjavscript30.netlify.app/">here</a> or check out the <a href="https://github.com/keithro/JavaScript30">code</a>.</p>
+            </div>
           </article>
         </div>
 
@@ -157,7 +205,16 @@
         <h2 class="section-header">Let's Connect!</h2>
         <p>Want to discuss a project? Send me an email at:</p><a href="mailto:rodriguez.keith@gmail.com">rodriguez.keith@gmail.com</a>
         <div class="social-icons-container">
-          <div class="social-icons-bg">
+          <a href="https://github.com/keithro"><div class="social-icons-bg">
+            <img class="social-icons-img" src="img/SVG/github.svg" alt="Github icon">
+          </div></a>
+          <a href="https://www.linkedin.com/in/keithrodriguez/"><div class="social-icons-bg">
+            <img class="social-icons-img" src="img/SVG/linkedin.svg" alt="Linkedin icon">
+          </div></a>
+          <a href="https://codepen.io/keither"><div class="social-icons-bg">
+            <img class="social-icons-img" src="img/SVG/codepen.svg" alt="Codepen icon">
+          </div></a>
+          <!-- <div class="social-icons-bg">
             <img class="social-icons-img" src="img/SVG/github.svg" alt="Github icon">
           </div>
           <div class="social-icons-bg">
@@ -165,7 +222,7 @@
           </div>
           <div class="social-icons-bg">
             <img class="social-icons-img" src="img/SVG/codepen.svg" alt="Codepen icon">
-          </div>
+          </div> -->
         </div>
       </div>
       

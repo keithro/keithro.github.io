@@ -1,4 +1,3 @@
-// On second thought, I don't think I need this outside the event handler. Scrolling still works with mobile nav.
 const scrollPage = (end) => {
   $('html, body').animate({
     scrollTop: $(end).offset().top,
@@ -6,26 +5,17 @@ const scrollPage = (end) => {
   }, 500);
 }
 
-// PAGE SCROLL
-// =====================================
+// SCROLL FROM NAV MENU
 $('.nav-link').on('click', (e) => {
-  // const scrollPage = (end) => {
-  //   $('html, body').animate({
-  //     scrollTop: $(end).offset().top,
-  //     scrollLeft: $(end).offset().left,
-  //   }, 500);
-  // }
-
   if (e.target.hash !== '') {
     e.preventDefault();
 
-    // Determine what is the current location (what section is displayed)
+    // Determine the current location (what section is currently displayed)
     const start = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.id;
-    // Determine what is the desired destination (what link was clicked)
+    // Determine the desired destination (what link was clicked)
     const end = e.target.hash;
 
     if (start === 'home' && end === '#projects') {
-      // const midpoint = $('#about-link'.hash)  // See if this will work w ".hash" inside the parenthesis
       const midpoint = document.querySelector('#about-link').hash;
       scrollPage(midpoint);
     } else if (start === 'home' && end === '#contact') {
@@ -47,6 +37,12 @@ $('.nav-link').on('click', (e) => {
 
     window.location.hash = end; // Might need this to add nav location indicator
   }
+});
+
+// SCROLL FROM NAV ARROWS
+$('.nav-arrow').on('click', (e) => {
+  e.preventDefault();
+  scrollPage(e.target.parentElement.hash);
 });
 
 // TOGGLE OPEN/CLOSE MOBILE NAV MENU

@@ -85,7 +85,7 @@ nav {
     right: 4rem;
     border-radius: 50%;
     // background-color: #c1c1e0; // TODO: CHANGE COLOR TO RADIAL GRADIENT
-    background: radial-gradient($light-purple, rgb(171, 101, 241)); // TODO: CHANGE COLOR TO RADIAL GRADIENT
+    background: radial-gradient($red, rgb(171, 101, 241)); // TODO: CHANGE COLOR TO RADIAL GRADIENT
     z-index: 100;
     
     // transition: <property> <duration> <timing-function> <delay>;
@@ -145,6 +145,8 @@ nav {
 // DESKTOP NAV ////////////////////////////////
 .desktop-nav {
   display: none;
+  // position: relative; // should actually position arrows relative to window.
+  padding: 0 5rem;
   
   @media screen and (min-width: $desktop-bp) {
     display: flex;
@@ -153,20 +155,49 @@ nav {
   }
  
   .nav {
-    // &-item {
-    
-    // }
-   
     &-link {
       &:link,
       &:visited { 
         color: $dark-green;
-        margin: 0 2rem;
+        margin: 0 1rem;
       }
       &:hover,
       &:active {
         text-decoration: underline;
       }
     }
+  }
+}
+
+.nav-arrow {
+  display: none;
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+
+  @media screen and (min-width: $desktop-bp) {
+    display: flex;
+  }
+
+  &-right {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+  }
+
+  &-left {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+  }
+
+  &-down {
+    bottom: 2rem;
+    left: 50%;
+  }
+  
+  &-up {
+    top: 2rem;
+    left: 50%;
   }
 }
