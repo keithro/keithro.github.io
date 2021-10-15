@@ -45,6 +45,7 @@ $('.nav-arrow').on('click', (e) => {
   scrollPage(e.target.parentElement.hash);
 });
 
+// FIXME: Why didn't you add the class to ONE element and change CSS selectors
 // TOGGLE OPEN/CLOSE MOBILE NAV MENU
 $('.mobile-nav-btn').on('click', () => {
   $('.mobile-nav-background').toggleClass('open');

@@ -73,3 +73,5 @@ Design, plan and build a portfolio website. The site will use Javascript/jQuery 
 ## Issues and Resolutions
  Relative and fixed position elements were showing when mobile navigation menu was open or blocking it from opening/showing completley even though the z-index was set to 100+. When I changed the z-index of other elements to "-1" those elements would no longer interact with the mouse or be clickable (links for example). I have to move the mobile navigation HTML to the bottom of the body.
 
+ Coloring SVGs
+
