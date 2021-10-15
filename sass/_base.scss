@@ -23,7 +23,7 @@ $tablet-bp: 768px;
 $desktop-bp: 1028px;
 
 /* offset-x | offset-y | blur-radius | spread-radius | color */
-$small-shadow: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.35);
+$small-shadow: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.25);
 
 /* ========== MIXINS ========== */ 
 @mixin flexCentered($direction: column) {

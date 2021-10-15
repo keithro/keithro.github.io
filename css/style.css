@@ -1,11 +1,10 @@
 /* Documentation says to use "@use" but it is not working */
 /* ========== VARIABLES ========== */
 /* Fonts */
-/* Greens */
-/* Dark Green with Accents */
+/* Dark Green with Accent Colors */
 /* offset-x | offset-y | blur-radius | spread-radius | color */
 /* ========== MIXINS ========== */
-/* Simple Reset */
+/* ========== SIMPLE RESET ========== */
 *,
 *::before,
 *::after {
@@ -13,7 +12,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-/* Set Rem & Font Sizes */
+/* ========== BASE REM & FONTS SIZES ========== */
 html {
   font-size: 50%; }
   @media screen and (min-width: 768px) {
@@ -73,9 +72,9 @@ section {
     max-height: 100vh; }
 
   .section-container {
-    height: 85%;
+    height: 80%;
     width: 80%;
-    max-height: 85%;
+    max-height: 80%;
     max-width: 80%;
     box-shadow: 0 0.5rem 5rem 0 rgba(0, 0, 0, 0.35);
     margin: 0;
@@ -399,7 +398,7 @@ nav li {
     top: -1.8rem;
     background-color: #fff;
     border-radius: 50%;
-    box-shadow: 0 0.2rem 2rem 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0.2rem 2rem 0 rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -477,7 +476,7 @@ nav li {
 #projects .project-card {
   width: 40rem;
   margin: 5rem;
-  box-shadow: 0 0.2rem 2rem 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0.2rem 2rem 0 rgba(0, 0, 0, 0.25);
   transition: all .8s;
   display: flex;
   flex-direction: column;
@@ -489,7 +488,8 @@ nav li {
   width: 100%;
   text-align: center;
   padding: 4rem;
-  transition: all .8s; }
+  transition: all .8s;
+  box-shadow: 0 0.2rem 2rem 0 rgba(0, 0, 0, 0.25); }
   #projects .project-description h3 {
     margin-bottom: 1.6rem; }
   #projects .project-description p {
@@ -533,7 +533,7 @@ nav li {
       left: -11%; }
   #projects .project-description {
     position: absolute;
-    background-color: #fff;
+    background-color: #f2f5f6;
     font-size: 1.4rem;
     padding: 3rem;
     z-index: -1; } }

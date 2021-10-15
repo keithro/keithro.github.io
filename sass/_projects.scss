@@ -73,6 +73,8 @@
       padding: 4rem;
       transition: all .8s;
 
+      box-shadow: $small-shadow; // need for hover effect
+
       // @media screen and (min-width: $tablet-bp) {
       //   height: 30rem;
       //   font-size: 2rem;
@@ -161,7 +163,8 @@
 
       &-description {
         position: absolute;
-        background-color: #fff;
+        background-color: rgb(242, 245, 246);
+        // background-color: rgb(235, 244, 246);
         font-size: 1.4rem;
         padding: 3rem;
         z-index: -1;
