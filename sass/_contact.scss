@@ -12,8 +12,20 @@
       @media screen and (min-width: $desktop-bp) {
         margin: 0;
       } 
+
+      a {
+        text-decoration: none;
+        color: $dark-purple;
+        font-weight: 700;
+        @include flexCentered;
+
+        &:hover {
+          color: $red;
+        }
+      }
     }
   }
+
 
   .social-icons {
     

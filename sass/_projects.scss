@@ -4,25 +4,26 @@
       @include flexCentered;
 
       @media screen and (min-width: $desktop-bp) {
-        // height: 100%;
-        // width:100%;
-        margin: 5rem;;
+       margin: 5rem;;
         border: 1px solid $dark-green;
+        flex: 1 0 50%;
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
-
-        // height: 85%;
-        // width:85%;
-        // @include flexCentered(row);
       }
 
-      .projects-heading {
+      .project-heading {
         text-align: center;
 
+        @media screen and (min-width: $tablet-bp) {
+          margin-top: 5rem;
+        }
+        
         @media screen and (min-width: $desktop-bp) {
+          margin-top: 0;
           text-align: left;
           padding-left: 2rem;
+          flex: 1 0 50%;
         }
       }
     }
@@ -49,42 +50,24 @@
     }
     
     &-card {
-      height: 50rem;
+      // height: 50rem;
       width: 40rem;
       margin: 5rem;
       box-shadow: $small-shadow;
+      transition: all .8s;
 
       @include flexCentered;
-      
-      // @media screen and (min-width: $tablet-bp) {
-      //   height: 60rem;
-      //   width: 48rem;
-      // }
-      
-      // @media screen and (min-width: $desktop-bp) {
-        
-      // }
     }
 
     &-img {
-      height: 25rem;
       width: 100%;
 
       // background-size: cover;
       // background-blend-mode: lighten;
       // background-image: linear-gradient(to right bottom, $medium-green, $dark-green), url(../img/weather-app.jpg);
-
-      // @media screen and (min-width: $tablet-bp) {
-      //   height: 30rem;
-      // }
-      
-      // @media screen and (min-width: $desktop-bp) {
-        
-      // }
     }
 
     &-description {
-      height: 25rem;
       width: 100%;
       text-align: center;
       padding: 4rem;
@@ -121,62 +104,66 @@
   @media screen and (min-width: $tablet-bp) {
     .project {
       &-card {
-        height: 60rem;
         width: 48rem;
       }
 
-      &-img {
-        height: 30rem;
-      }
-
       &-description {
-        height: 30rem;
         font-size: 2rem;
+        padding: 5rem;
       }
     }
   }
   
   @media screen and (min-width: $desktop-bp) {
     .project {
+      &-card:hover {
+        transform: scale(110%) translate(-33%, -50%);
+        z-index: 10;
+      }
+      &-card:hover .project-description {
+        transform: scale(1) translateY(100%);
+      }
+
+      &-heading {
+        height: 100%;
+      }
+
+      &-container {
+        position: relative;
+      }
+
       &-card {
         position: absolute;
-        // height: 40rem;
-        height: 20rem;
-        // height: auto;
-        width: 32rem;
+        width: 30rem;
         margin: 0rem;
 
         &-1 {
-          top: 46%;
-          right: 28%;
+          top: 5%;
+          left: 5%;
         }
         &-2 {
-          top: 60%;
-          right: 12%;
+          top: 29%;
+          left: 38%;
         }
         &-3 {
-          top: 64%;
-          right: 56%;
+          top: 47%;
+          left: -55%;
         }
         &-4 {
-          top: 77%;
-          right: 38%;
+          top: 58%;
+          left: -11%;
         }
       }
 
-      &-img {
-        height: 20rem;
-
-        &:hover + .project-description {
-          transform: scale(1) translateY(0);
-        }
-      }
+      // &-img {
+        // height: 20rem;
+      // }
 
       &-description {
-        height:20rem;
+        position: absolute;
+        background-color: #fff;
         font-size: 1.4rem;
         padding: 3rem;
-        transform: scale(1) translateY(-100%);
         z-index: -1;
       }
     }

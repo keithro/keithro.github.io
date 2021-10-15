@@ -1,47 +1,15 @@
 /* ========== VARIABLES ========== */ 
 
 /* Fonts */ 
-// TODO: Delete what you don't use
-// font-family: 'Mukta', sans-serif; // 200;300;400
-// font-family: 'Nunito', sans-serif; // 200;300;400;700;900
-// font-family: 'Open Sans', sans-serif;
-// font-family: 'Playfair Display', serif;
-// font-family: 'Cormorant Garamond', serif;
-
-// $heading-font: 'Mukta', sans-serif;
-// $heading-font: 'Nunito', sans-serif;
-// $heading-font: 'Open Sans', sans-serif;
-// $heading-font: 'Playfair Display', serif;
 $heading-font: 'Cormorant Garamond', serif;
-
 $content-font: 'Nunito', sans-serif;
-// $content-font: 'Mukta', sans-serif;
 
-/* Greens */
-$nyanza: rgba(216, 243, 220, 1);
-$turquoise-green: rgba(183, 228, 199, 1);
-$turquoise-green-2: rgba(149, 213, 178, 1);
-$ocean-green: rgba(116, 198, 157, 1);
-$ocean-green-2: rgba(82, 183, 136, 1);
-$illuminating-emerald: rgba(64, 145, 108, 1);
-$bottle-green: rgba(45, 106, 79, 1);
-$brunswick-green: rgba(27, 67, 50, 1);
-$dark-jungle-green: rgba(8, 28, 21, 1);
-
-// /* Dark Green with Accents */
-// $languid-lavender: rgba(230, 212, 236, 1);
-// $wisteria: rgba(194, 160, 228, 1);
-// $middle-blue: rgba(136, 217, 230, 1);
-// $salmon: rgba(253, 137, 114, 1);
-// $rich-black: rgba(24, 58, 58, 1);
-
-/* Dark Green with Accents */
+/* Dark Green with Accent Colors */
 $light-green: rgba(116, 198, 157, 1); // not using??
 $medium-green: rgba(45, 106, 79, 1);
 $dark-green: rgba(27, 67, 50, 1);
 $light-purple: rgba(230, 212, 236, 1);
 $medium-purple: rgba(194, 160, 228, 1);
-// $dark-purple: rgb(143, 82, 203);
 $dark-purple: rgb(105, 54, 156);
 $blue: rgb(157, 234, 246);
 $red: rgba(253, 137, 114, 1);
@@ -65,8 +33,7 @@ $small-shadow: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.35);
   align-items: center;
 }
 
-
-/* Simple Reset */ 
+/* ========== SIMPLE RESET ========== */ 
 *,
 *::before,
 *::after {
@@ -75,7 +42,7 @@ $small-shadow: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.35);
   box-sizing: border-box;
 }
 
-/* Set Rem & Font Sizes */ 
+/* ========== BASE REM & FONTS SIZES ========== */ 
 html {
   font-size: 50%; // seting 1rem = 8px (8px / 16px)
 

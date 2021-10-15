@@ -9,7 +9,7 @@
 |Day 2| Basic Layout | Complete
 |Day 2| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 3| Animations / API Implementation | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
+|Day 4| MVP & Bug Fixes | Complete
 |Day 5| Final Touches | Complete
 |Day 6| Present | Incomplete
 
@@ -43,19 +43,19 @@ Design, plan and build a portfolio website. The site will use Javascript/jQuery 
 | Hamburger/mobile Nav | H | 2hr | 4hr |
 | Open/close mobile Nav & animations | H | 2hr | 4hr |
 | Working with API | H | 1.5hrs|  hr | 
-| Responsive | H | 3hr | 6hr |
-| About, Project and Contact Sections  | H | 2hr | 6hr |  
+| Responsive | H | 3hr | 5hr |
+| Home, About, Project and Contact Sections  | H | 2hr | 8hr |  
 | Social Media Icons/links | H | 1hr |  1hr |
 | Design & Make Favicon | L | 1.5hr |  hr |
-| Total | H | 20hrs| hrs |
+| Total | H | 20hrs| 35+hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
 | Logo or welcome message SVG animation | L | 3hr | hr |
-| Floating shape decorations on home page + interact with mouse | H | 3hr | 3hr |
+| Floating shape decorations on home page + interact with mouse | H | 3hr | hr |
 | Floating Tech Icons | L | 2hr | hr |
-| Hamberger to "X" icon transformation | L | 2hr | 2hr |
+| Hamberger to "X" icon transformation | L | 2hr | 1hr |
 | Project Modals  | L | 2hr | hr |  
 | Mouse scroll (correct order: right, down, left) | L | 3hr | hr |
 | Email Form | L | 3hr | hr |
@@ -71,5 +71,5 @@ Design, plan and build a portfolio website. The site will use Javascript/jQuery 
 
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
+ Relative and fixed position elements were showing when mobile navigation menu was open or blocking it from opening/showing completley even though the z-index was set to 100+. When I changed the z-index of other elements to "-1" those elements would no longer interact with the mouse or be clickable (links for example). I have to move the mobile navigation HTML to the bottom of the body.
 

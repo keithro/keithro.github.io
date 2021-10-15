@@ -19,7 +19,7 @@ nav {
 
   @media screen and (min-width: $desktop-bp) {
     display: none;
-  }
+  } 
 
   // MOBILE NAV BUTTON
   &-btn {
@@ -84,13 +84,12 @@ nav {
     top: 4rem;
     right: 4rem;
     border-radius: 50%;
-    // background-color: #c1c1e0; // TODO: CHANGE COLOR TO RADIAL GRADIENT
-    background: radial-gradient($red, rgb(171, 101, 241)); // TODO: CHANGE COLOR TO RADIAL GRADIENT
+    background: radial-gradient($red, rgb(171, 101, 241));
     z-index: 100;
     
     // transition: <property> <duration> <timing-function> <delay>;
     transition: transform 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-    // transition: transform 0.6s cubic-bezier(0.36, 0, 0.66, -0.56);
+    
 
     @media screen and (min-width: $tablet-bp) {
       top: 4.7rem;
