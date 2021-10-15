@@ -10,7 +10,7 @@
 |Day 2| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 3| Animations / API Implementation | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
-|Day 5| Final Touches | Incomplete
+|Day 5| Final Touches | Complete
 |Day 6| Present | Incomplete
 
 
@@ -39,14 +39,13 @@ Design, plan and build a portfolio website. The site will use Javascript/jQuery 
 | Project Previews & design inspiration | H | 4hr | 4+hr |
 | Project Worksheet | H | 1hr | 2+hr |
 | Desktop Nav | H | 1hr | 1hr ]
-| Nav links move to proper section with jQuery | H | 2hr |  8hr |
+| Nav links move to proper section with jQuery | H | 2hr |  6hr |
 | Hamburger/mobile Nav | H | 2hr | 4hr |
 | Open/close mobile Nav & animations | H | 2hr | 4hr |
 | Working with API | H | 1.5hrs|  hr | 
-| Responsive | H | 3hr | hr |
-| Mouse scroll (correct order: right, down, left) | L | 3hr | -hr | hr |
-| About, Project and Contact Sections  | H | 2hr | hr |  
-| Social Media Icons/links | H | 1hr |  hr |
+| Responsive | H | 3hr | 6hr |
+| About, Project and Contact Sections  | H | 2hr | 6hr |  
+| Social Media Icons/links | H | 1hr |  1hr |
 | Design & Make Favicon | L | 1.5hr |  hr |
 | Total | H | 20hrs| hrs |
 
@@ -54,10 +53,11 @@ Design, plan and build a portfolio website. The site will use Javascript/jQuery 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
 | Logo or welcome message SVG animation | L | 3hr | hr |
-| Floating shape decorations on home page + interact with mouse | H | 3hr | hr |
+| Floating shape decorations on home page + interact with mouse | H | 3hr | 3hr |
 | Floating Tech Icons | L | 2hr | hr |
-| Hamberger to "X" icon transformation | L | 2hr | hr |
+| Hamberger to "X" icon transformation | L | 2hr | 2hr |
 | Project Modals  | L | 2hr | hr |  
+| Mouse scroll (correct order: right, down, left) | L | 3hr | hr |
 | Email Form | L | 3hr | hr |
 | Total | H | 17hrs| hrs |
 

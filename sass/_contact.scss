@@ -28,6 +28,10 @@
       background-color: $red;
       border-radius: 100%;
       @include flexCentered(row);
+
+      &:hover {
+        background-color: rgb(255, 116, 88);
+      }
     }
 
     &-img {
