@@ -3,9 +3,11 @@
   .section {
 
     &-content-container {
+      position: relative;
       height: 90%; // FIXME: Why does 100% go full width of viewport + margin?
       border: 1px solid $dark-green;
       margin: 4rem;
+      z-index: -1;
       @include flexCentered;
 
       @media screen and (min-width: $desktop-bp) {
@@ -20,5 +22,92 @@
     &-header {
       font-size: 6rem;
     }
+  }
+
+  .home-bg-shape {
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    z-index: -1;
+    // transform: rotate(-30deg);
+  }
+
+  .purple {
+    fill: $light-purple;
+  }
+
+  .red {
+    fill: $red;
+  }
+
+  .blue {
+    fill: $blue;
+  }
+
+  @for $i from 1 through 12 {
+    #bg-item-#{$i} {
+      transform: rotate($i * 7.5deg);
+    }
+  }
+
+
+  #bg-item-1 {
+    top: 20%;
+    left: 54%;
+  }
+
+  #bg-item-2 {
+    top: 78%;
+    left: 14%;
+  }
+
+  #bg-item-3 {
+    top: 20%;
+    left: 83%;
+  }
+
+  #bg-item-4 {
+    top: 79%;
+    left: 39%;
+  }
+
+  #bg-item-5 {
+    top: 3%;
+    left: 77%;
+  }
+
+  #bg-item-6 {
+    top: 89%;
+    left: 22%;
+  }
+
+  #bg-item-7 {
+    bottom: 54%;
+    left: 17%;
+  }
+
+  #bg-item-8 {
+    bottom: 17%;
+    left: 78%;
+  }
+
+  #bg-item-9 {
+    bottom: 83%;
+    left: 20%;
+  }
+
+  #bg-item-10 {
+    bottom: 46%;
+    left: 74%;
+  }
+
+  #bg-item-11 {
+    bottom: 77%;
+    left: 3%;
+  }
+
+  #bg-item-12 {
+    bottom: 22%;
+    left: 89%;
   }
 }
