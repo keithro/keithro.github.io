@@ -46,7 +46,7 @@ $('.nav-arrow').on('click', (e) => {
   scrollPage(e.target.parentElement.hash);
 });
 
-// FIXME: Why didn't you add the class to ONE element and change CSS selectors
+// FIXME: Why don't you add the class to ONE element and change CSS selectors
 // TOGGLE OPEN/CLOSE MOBILE NAV MENU
 $('.mobile-nav-btn').on('click', () => {
   $('.mobile-nav-background').toggleClass('open');
@@ -62,50 +62,71 @@ $('.mobile-nav-item').on('click', () => {
 
 // HOME PAGE ANIMATION
 $().ready(function () {
-  console.log('animating...');
-
   // get height & width of .section-content-container
+  const container = $('.section-content-container');
+  let containerWidth = container.width();
+  let containerHeight = container.height();
+  console.log('Window height/width');
+  console.log('H: ', containerHeight, 'W: ', containerWidth);
+  
+  // let containerInnerWidth = container.innerWidth();
+  // let containerInnerHeight = container.innerHeight();
+  // console.log('Window innerHeight/innerWidth');
+  // console.log('H: ', containerInnerHeight, 'W: ', containerInnerWidth); // same values as .height()/.width()
+  
 
   // MOVE SHAPE TO RANDOM LOCATION
-  $('.home-bg-shape').each(function(i) {
-    console.log(i);
-    console.log(this);
-    console.log($(this));
+  $('.home-bg-item').each(function(i) {
+    console.log('index: ',i);
+    // console.log($(this));
     
-    // get height & width of 'this' element
-    // generate random top & left values
-    // generate random rotate value
-    // reposition 'this' within 0 - h/w of shape to container h/w + h/w of shape
+    // Get height & width of 'this' element within 0 - h/w of shape to container h/w + h/w of shape
+    const bgItemHeight = $(this).outerHeight();
+    const bgItemWidth = $(this).outerWidth();
+    console.log('bgItem H/W', bgItemHeight, bgItemWidth);
+    
 
-    // = Math.ciel(Math.random * (contWidth + shapeWidth)
-
+    // Generate random top & left values
+    const y = Math.round(Math.random() * (containerHeight + bgItemHeight * 2)) - bgItemHeight;
+    const x = Math.round(Math.random() * (containerWidth + bgItemWidth * 2)) - bgItemWidth;
+    console.log('x: ', x,'y: ', y);
+    
+    // Generate random rotate value
+    const d = Math.round(Math.random() * 180);
+    console.log('d: ', d);
+    
+    // Reposition item
     $(this).css({
-      'top': ${};
-      'left': ${},
-      'transform': 'rotate(' + degrees + 'deg)' });
-    return $(this);
+      'top': `${y}px`, // pass in string with "px"?
+      'left': `${x}px`,
+      'transform': `rotate(${d}deg)`,
+    });
+    // return $(this);
+    console.log($(this));
   });
 
-  // ANIMATE SHAPE IN RANDOM DIRECTION
-  $('.home-bg-shape').each(function(i) {
-    console.log(i);
+  // // ANIMATE SHAPE IN RANDOM DIRECTION (see notes below)
+  // $('.home-bg-item').each(function(i) {
+  //   console.log(i);
 
-    // get height & width of element
+  //   // get height & width of element
 
-    // generate random top & left values
+  //   // generate random top & left values
 
-    // animate this
+  //   // animate this
 
-    // Add listener for touching window?
-  });
+  //   // Add listener for touching window?
+  // });
 });
+
+// REFACTOR ABOVE INTO SEPARATE FUNCTION AND CALL AGAIN ON WINDOW RESIZE
 
 /*
 // ------------------------------------------------------
 // HOME PAGE ANIMATION
 // window.onload or document.querySelector(window).addEventListener('onload')
 // might need to use .load if below can't get window dimentions
-$('.home-bg-shape').ready(function () {
+$('.home-bg-item').ready(function () {
   console.log('animating...');
   
   // get height and width of element
@@ -113,7 +134,7 @@ $('.home-bg-shape').ready(function () {
   // Move each to random start position? Or just keep them where they are now
 
   // animate to randome border edge
-  $('.home-bg-shape').animate({
+  $('.home-bg-item').animate({
   // this.animate({
     // translate: ,// random direction
     // bottom: "180px",
