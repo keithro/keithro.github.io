@@ -62,9 +62,13 @@
     &-img {
       width: 100%;
 
+      // FIXME: background w gradient overlay. Add rgbA($color, .3)
       // background-size: cover;
       // background-blend-mode: lighten;
       // background-image: linear-gradient(to right bottom, $medium-green, $dark-green), url(../img/weather-app.jpg);
+
+      // or only use this:
+      // background-image: linear-gradient(rgba(0,0,0 0.2),rgba(0,0,0,0.8)),url(<https://picsum.photos/id/1031/500/400>);
     }
 
     &-description {

@@ -229,6 +229,7 @@ nav li {
   height: 100vh; }
   #home .section-content-container {
     position: relative;
+    overflow: hidden;
     height: 90%;
     border: 1px solid #1b4332;
     margin: 4rem;

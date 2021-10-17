@@ -4,6 +4,7 @@
 
     &-content-container {
       position: relative;
+      overflow: hidden;
       height: 90%; // FIXME: Why does 100% go full width of viewport + margin?
       border: 1px solid $dark-green;
       margin: 4rem;
