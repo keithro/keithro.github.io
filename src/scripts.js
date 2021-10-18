@@ -105,50 +105,32 @@ $().ready(function () {
     console.log($(this));
   });
 
-  // // ANIMATE SHAPE IN RANDOM DIRECTION (see notes below)
-  // $('.home-bg-item').each(function(i) {
-  //   console.log(i);
+  // ANIMATE SHAPE IN RANDOM DIRECTION (see notes below)
+  $('.home-bg-item').each(function(i) {
 
-  //   // get height & width of element
+    // animate this
+    $(this).animate({
+      'top': '+=300px',
+      'right': '+=50px',
+      'transform': `rotate(+=359deg)`,
+      // 'transform': `rotate(${d}deg)`,
+    }, {
+      duration: 5000, // can this be based on distance * ms so they all travel the same speed?
+      easing: "linear",
 
-  //   // generate random top & left values
+    });
 
-  //   // animate this
+    // Add listener for touching window?  OR 'done' function should place starting position along container edge +/- 20px
 
-  //   // Add listener for touching window?
-  // });
+  });
 });
 
 // REFACTOR ABOVE INTO SEPARATE FUNCTION AND CALL AGAIN ON WINDOW RESIZE
+    // get height & width of element
+    // generate random top & left values
 
-/*
-// ------------------------------------------------------
-// HOME PAGE ANIMATION
-// window.onload or document.querySelector(window).addEventListener('onload')
-// might need to use .load if below can't get window dimentions
-$('.home-bg-item').ready(function () {
-  console.log('animating...');
-  
-  // get height and width of element
-    
-  // Move each to random start position? Or just keep them where they are now
 
-  // animate to randome border edge
-  $('.home-bg-item').animate({
-  // this.animate({
-    // translate: ,// random direction
-    // bottom: "180px",
-    bottom: "+=100px",
-    // rotate: "+=180",
-
-  },{
-    duration: 5000,
-    easing: "linear",
-
-  }); // can this be based on distance * ms so they all travel the same speed?
-
+    // OTHER IDEAS FOR HOME BG ANIMATION
    // If it touches left or right edge reverse X direction;
    // If it touches top or bottom edge reverse Y direction
   //  Should it reverse direction if mouse < 50px?
-})
-*/
