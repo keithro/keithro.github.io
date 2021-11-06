@@ -32,6 +32,10 @@
     z-index: -1;
   }
 
+  .circle {
+    transform-origin: 40% 40%;
+  }
+
   .purple {
     fill: $light-purple;
   }
@@ -47,12 +51,13 @@
     // TODO: DELETE AFTER ADDING JS ANIMATIONS
       
   .home-bg-item {
-    animation: spin 3s infinite;    
+    animation: rotate 6s linear infinite;    
   }
 
   @for $i from 1 through 12 {
     #home-bg-item-#{$i} {
-      transform: rotate($i * 7.5deg);
+      // transform: rotate($i * 7.5deg);
+      animation-delay: $i * 200ms;
     }
   }
 
@@ -72,33 +77,33 @@
   }
 
   #home-bg-item-4 {
-    top: 79%;
-    left: 39%;
-  }
-
-  #home-bg-item-5 {
-    top: 3%;
-    left: 77%;
-  }
-
-  #home-bg-item-6 {
     top: 89%;
     left: 22%;
   }
 
+  #home-bg-item-5 {
+    top: 38%;
+    left: 92%;
+  }
+
+  #home-bg-item-6 {
+    top: 79%;
+    left: 39%;
+  }
+
   #home-bg-item-7 {
-    bottom: 54%;
+    top: 46%;
     left: 17%;
   }
 
   #home-bg-item-8 {
-    bottom: 17%;
-    left: 78%;
+    top: 61%;
+    left: 53%;
   }
 
   #home-bg-item-9 {
-    bottom: 83%;
-    left: 20%;
+    bottom: 22%;
+    left: 89%;
   }
 
   #home-bg-item-10 {
@@ -107,13 +112,44 @@
   }
 
   #home-bg-item-11 {
-    bottom: 77%;
-    left: 3%;
+    top: 3%;
+    left: 77%;
   }
 
   #home-bg-item-12 {
-    bottom: 22%;
-    left: 89%;
+    top: 6%;
+    left: 9%;
+  }
+
+  // NEW ITEMS START HERE
+  #home-bg-item-13 {
+    top: 94%;
+    left: 60%;
+  }
+
+  #home-bg-item-14 {
+    bottom: 95%;
+    left: 43%;
+  }
+
+  #home-bg-item-15 {
+    bottom: 72%;
+    left: 45%;
+  }
+
+  #home-bg-item-16 {
+    top: 40%;
+    left: 38%;
+  }
+
+  #home-bg-item-17 {
+    top: 17%;
+    left: 5%;
+  }
+
+  #home-bg-item-18 {
+    top: 64%;
+    left: -1%;
   }
 
   @keyframes spin {
