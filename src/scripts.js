@@ -60,6 +60,8 @@ $('.mobile-nav-item').on('click', () => {
   $('.mobile-nav-btn-icon').removeClass('open');
 });
 
+/*
+
 // HOME PAGE ANIMATION
 $().ready(function () {
   // get height & width of .section-content-container
@@ -108,12 +110,11 @@ $().ready(function () {
   // ANIMATE SHAPE IN RANDOM DIRECTION (see notes below)
   $('.home-bg-item').each(function(i) {
 
-    // animate this
+    // animate "this"
     $(this).animate({
       'top': '+=300px',
-      'right': '+=50px',
-      'transform': `rotate(+=359deg)`,
-      // 'transform': `rotate(${d}deg)`,
+      'left': '+=50px',
+      'transform': `rotate(+=180deg)`, // TODO: first check if >= 180
     }, {
       duration: 5000, // can this be based on distance * ms so they all travel the same speed?
       easing: "linear",
@@ -134,3 +135,5 @@ $().ready(function () {
    // If it touches left or right edge reverse X direction;
    // If it touches top or bottom edge reverse Y direction
   //  Should it reverse direction if mouse < 50px?
+
+  */
