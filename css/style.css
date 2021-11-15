@@ -196,11 +196,23 @@ nav li {
       display: flex;
       justify-content: flex-end;
       align-items: flex-end; } }
+  .desktop-nav .nav-item {
+    position: relative; }
   .desktop-nav .nav-link:link, .desktop-nav .nav-link:visited {
     color: #1b4332;
     margin: 0 1rem; }
-  .desktop-nav .nav-link:hover, .desktop-nav .nav-link:active {
-    text-decoration: underline; }
+  .desktop-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #1b4332;
+    transition: transform 200ms ease-in-out;
+    transform: scaleX(0); }
+  .desktop-nav .nav-link:hover::before, .desktop-nav .nav-link:active::before {
+    transform: scaleX(1); }
 
 .nav-arrow {
   display: none;

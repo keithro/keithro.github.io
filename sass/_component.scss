@@ -152,19 +152,55 @@ nav {
     align-items: flex-end;
   }
  
+  // .nav {
+  //   &-link {
+  //     &:link,
+  //     &:visited { 
+  //       color: $dark-green;
+  //       margin: 0 1rem;
+  //     }
+  //     &:hover,
+  //     &:active {
+  //       text-decoration: underline;
+  //     }
+  //   }
+  // }
+ 
   .nav {
+    &-item {
+      position: relative; // FOR HOVER ANIMATION
+    }
+
     &-link {
       &:link,
       &:visited { 
         color: $dark-green;
         margin: 0 1rem;
       }
-      &:hover,
-      &:active {
-        text-decoration: underline;
+      
+
+
+      &::before { 
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: $dark-green;
+
+        transition: transform 200ms ease-in-out;
+        transform: scaleX(0);
+      }
+      &:hover::before,
+      &:active::before {
+        transform: scaleX(1);
       }
     }
   }
+
+
+
 }
 
 .nav-arrow {
