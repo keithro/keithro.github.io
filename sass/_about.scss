@@ -2,7 +2,12 @@
 #about {
   .section{
     &-content-container {
-      @include flexCentered;
+      margin-top: 2rem;
+
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
 
       // @media screen and (min-width: $desktop-bp) {
         
@@ -24,8 +29,8 @@
 
     @media screen and (min-width: $desktop-bp) {
       width: 90%;
-      margin: 1rem 3rem 3rem 3rem;
-      padding: 0 3.5rem 3.5rem 3.5rem;
+      margin: 1rem 3rem 1.2rem 3rem;
+      padding: 0 3.5rem 4.5rem 3.5rem;
     }
   }
   
@@ -33,13 +38,14 @@
     position: relative;
     display: inline-block;
     bottom: 3rem;
-    right: 13rem;
+    left: -9rem;
     padding: 0 1rem;
     background-color: #fff;
-
+    
     @media screen and (min-width: $tablet-bp) {
       font-size: 8rem;
-      bottom: 3.5rem;
+      bottom: 4rem;
+      left: -20rem;
       padding: 0 1.5rem;
     }
   }
@@ -60,6 +66,7 @@
   
   .skills {
     position: relative;
+    flex: 1 1 33%;
     text-align: center;
     background-color: rgba(#000, .05);
     margin: 5rem 3.5rem;
@@ -74,7 +81,7 @@
 
     @media screen and (min-width: $desktop-bp) {
       margin: 2rem;
-      padding: 0 2rem 2rem 2rem;
+      padding: 0 4rem 4rem 4rem;
     }
 
     &-container {
@@ -101,10 +108,11 @@
       border-radius: 50%;
       box-shadow: $small-shadow;
       @include flexCentered;
-
+      
       @media screen and (min-width: $desktop-bp) {
-        height: 5rem;
-        width: 5rem;
+        top: -2.4rem;
+        height: 8rem;
+        width: 8rem;
       }
     }
 
@@ -114,8 +122,8 @@
       width: 5rem;
 
       @media screen and (min-width: $desktop-bp) {
-        height: 3rem;
-        width: 3rem;
+        height: 4rem;
+        width: 4rem;
       }
     }
 
@@ -129,8 +137,8 @@
       // }
 
       @media screen and (min-width: $desktop-bp) {
-        font-size: 1.6rem;
-        margin-bottom: 0;
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
         bottom: .8rem;
       }
     }
@@ -138,14 +146,18 @@
     p {
       line-height: 2.6rem;
       
-      @media screen and (min-width: $desktop-bp) {
+      @media screen and (min-width: $tablet-bp) {
         line-height: 3rem;
       }
       
       @media screen and (min-width: $desktop-bp) {
-        line-height: 1.8rem;
-        font-size: 1.2rem;
+        line-height: 2.4rem;
+        font-size: 1.6rem;
       }
+    }
+
+    span {
+      font-weight: bold;
     }
   }
 }

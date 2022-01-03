@@ -37,7 +37,6 @@ section {
     }
   }
 
-  // section:last-child .section-container { // Selector not working...
   #contact .section-container {
     margin-bottom: 5rem;
   }
@@ -95,6 +94,10 @@ section {
   #contact {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+
+    .section-container {
+      margin-bottom: 0;
+    }
   }
 
 }
