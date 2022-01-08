@@ -1,9 +1,5 @@
 #contact {
   .section {
-    &-container {
-      // @include flexCentered;
-    }
-    
     &-content-container {
       margin: 20rem 0;
       height: 100%;
@@ -20,7 +16,7 @@
         @include flexCentered;
 
         &:hover {
-          color: $red;
+          color: $medium-purple;
         }
       }
     }
@@ -44,6 +40,11 @@
       &:hover {
         background-color: rgb(255, 116, 88);
       }
+    }
+
+    &-link {
+      height: 100%;
+      width: 100%;
     }
 
     &-img {

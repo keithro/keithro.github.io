@@ -29,7 +29,7 @@ nav {
     top: 3rem;
     right: 3rem;
     border-radius: 50%;
-    background-color: #fff; // TODO: CHANGE COLOR
+    background-color: #fff;
     box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: .1);
     z-index: 200;
     // Inner
@@ -49,7 +49,7 @@ nav {
       position: absolute;
       width: 3.8rem;
       height: .5rem;
-      background-color: $dark-gray; // TODO: CHANGE COLOR
+      background-color: $dark-gray;
       border-radius: .3rem;
       transition: all 0.4s;
 
@@ -127,7 +127,7 @@ nav {
   &-item {
     margin: 1.8rem;
     // padding: ; // Don't forget to change to inline-block if you need padding.
-    color: #eee; // TODO: CHANGE COLOR
+    color: #eee;
     
     @media screen and (min-width: $tablet-bp) {
       margin: 2rem;
@@ -212,21 +212,25 @@ nav {
     position: absolute;
     top: 50%;
     right: 2rem;
+    transform: translate(0, -50%);
   }
 
   &-left {
     position: absolute;
     top: 50%;
     left: 2rem;
+    transform: translate(0, -50%);
   }
 
   &-down {
     bottom: 2rem;
     left: 50%;
+    transform: translate(-50%, 0);
   }
   
   &-up {
     top: 2rem;
     left: 50%;
+    transform: translate(-50%, 0);
   }
 }
