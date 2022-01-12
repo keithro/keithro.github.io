@@ -398,7 +398,7 @@ nav li a {
 }
 #home #home-bg-item-13 {
   left: 60%;
-  animation-delay: 7520ms;
+  animation-delay: 8120ms;
 }
 #home #home-bg-item-14 {
   left: 43%;
@@ -432,7 +432,7 @@ nav li a {
     opacity: 1;
   }
   100% {
-    transform: translate(15rem, 100rem) rotate(360deg);
+    transform: translate(15rem, 110rem) rotate(360deg);
     opacity: 0;
   }
 }
@@ -494,7 +494,6 @@ nav li a {
 }
 #about .skills {
   position: relative;
-  flex: 1 1 33%;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.05);
   margin: 5rem 3.5rem;
@@ -513,6 +512,7 @@ nav li a {
 }
 @media screen and (min-width: 1028px) {
   #about .skills {
+    flex: 1 1 50%;
     margin: 2rem;
     padding: 0 4rem 4rem 4rem;
   }
@@ -673,7 +673,6 @@ nav li a {
   text-align: center;
   padding: 4rem;
   transition: all 0.8s;
-  box-shadow: 0 0.2rem 2rem 0 rgba(0, 0, 0, 0.25);
 }
 #projects .project-description h3 {
   margin-bottom: 1.6rem;
@@ -704,7 +703,6 @@ nav li a {
   }
   #projects .project-card:hover .project-description {
     transform: translateY(100%);
-    height: auto;
   }
   #projects .project-heading {
     height: 100%;
@@ -736,6 +734,7 @@ nav li a {
   #projects .project-description {
     position: absolute;
     background-color: #f2f5f6;
+    box-shadow: 0 0.2rem 2rem 0 rgba(0, 0, 0, 0.25);
     font-size: 1.4rem;
     padding: 3rem;
     height: 20rem;

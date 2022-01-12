@@ -76,7 +76,7 @@
       padding: 4rem;
       transition: all .8s;
 
-      box-shadow: $small-shadow; // need for hover effect
+      // box-shadow: $small-shadow; // need for hover effect
 
       // @media screen and (min-width: $tablet-bp) {
       //   height: 30rem;
@@ -128,7 +128,7 @@
       &-card:hover .project-description {
         // transform: scale(1) translateY(100%);
         transform: translateY(100%);
-        height: auto;
+        // height: auto;
       }
 
       &-heading {
@@ -170,6 +170,7 @@
         position: absolute;
         background-color: rgb(242, 245, 246);
         // background-color: rgb(235, 244, 246);
+        box-shadow: $small-shadow; // need for hover effect
         font-size: 1.4rem;
         padding: 3rem;
         height: 20rem;
