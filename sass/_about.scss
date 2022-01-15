@@ -50,6 +50,51 @@
     }
   }
 
+
+  &.active .section-header {
+    transform-origin: bottom;
+    animation: slideUp 800ms ease-in-out 100ms 1 forwards;
+    // animation: grow 2000ms ease-in 200ms 1 forwards;
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(4rem);
+      opacity: 0;
+    }
+    85% {
+      transform: translateY(-.4rem);
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  // @keyframes grow {
+  //   0% {
+  //     transform: scale(0);
+  //   }
+  //   40% {
+  //     transform: scale(.4) rotate(6deg);
+  //   }
+  //   60% {
+  //     transform: scale(.6) rotate(-6deg);
+  //   }
+  //   70% {
+  //     transform: scale(.75) rotate(12deg);
+  //   }
+  //   80% {
+  //     transform: scale(.85) rotate(-20deg);
+  //   }
+  //   90% {
+  //     transform: scale(.9) rotate(12deg);
+  //   }
+  //   100% {
+  //     transform: scale(1) rotate(0deg);
+  //   }
+  // }
+
   .section-subheading {
     font-size: 3rem;
     letter-spacing: .25rem;

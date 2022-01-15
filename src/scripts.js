@@ -10,6 +10,8 @@ $('.nav-link').on('click', (e) => {
   if (e.target.hash !== '') {
     e.preventDefault();
 
+    $('.sections').removeClass('active');
+
     // Determine the current location (what section is currently displayed)
     const start = e.target.closest('section').id;
     
@@ -35,7 +37,7 @@ $('.nav-link').on('click', (e) => {
       scrollPage(midpoint);
     }
     scrollPage(end);
-
+    $(end).addClass('active');
     window.location.hash = end; // Might need this to add nav location indicator
   }
 });
@@ -43,7 +45,10 @@ $('.nav-link').on('click', (e) => {
 // SCROLL FROM NAV ARROWS
 $('.nav-arrow').on('click', (e) => {
   e.preventDefault();
-  scrollPage(e.target.parentElement.hash);
+  $('.sections').removeClass('active');
+  const target = e.target.parentElement.hash;
+  scrollPage(target);
+  $(target).addClass('active');
 });
 
 // FIXME: Why don't you add the class to ONE element and change CSS selectors

@@ -22,6 +22,34 @@
     }
     &-header {
       font-size: 6rem;
+      opacity: 0;
+      animation: fadein 3000ms ease-in 300ms 1 forwards;
+    }
+    
+    &-subheader {
+      // font-size: 6rem;
+      opacity: 0;
+      animation: slideDown 500ms ease-out 2000ms 1 forwards;
+    }
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-2rem);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 
