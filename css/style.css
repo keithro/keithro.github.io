@@ -584,7 +584,6 @@ nav li a {
   width: 9rem;
   position: relative;
   top: -1.8rem;
-  background-color: #fff;
   background-color: #9deaf6;
   border-radius: 50%;
   box-shadow: 0 0.2rem 2rem 0 rgba(0, 0, 0, 0.25);
@@ -640,6 +639,20 @@ nav li a {
 }
 #about .skills span {
   font-weight: bold;
+}
+#about.active .skills-img {
+  animation: twirl 1200ms ease-in-out 1200ms;
+}
+@keyframes twirl {
+  0% {
+    transform: translateY(0) rotateY(0deg);
+  }
+  40% {
+    transform: translateY(-0.6rem) rotateY(360deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0deg);
+  }
 }
 
 #projects .section-content-container {
@@ -815,18 +828,43 @@ nav li a {
   align-items: center;
 }
 #contact .social-icons-bg {
+  position: relative;
   margin: 2rem;
   height: 8rem;
   width: 8rem;
   background-color: #fd8972;
   border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 0 0.2rem 2rem 0 rgba(0, 0, 0, 0.25);
+  border: 0.4rem solid #fff;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-#contact .social-icons-bg:hover {
-  background-color: #ff7458;
+#contact .social-icons-bg::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  top: 100%;
+  transition: 400ms;
+}
+#contact .social-icons-bg:nth-of-type(1)::after {
+  background-color: #383838;
+}
+#contact .social-icons-bg:nth-of-type(2)::after {
+  background-color: #0077B4;
+}
+#contact .social-icons-bg:nth-of-type(3)::after {
+  background-color: #000;
+}
+#contact .social-icons-bg:hover::after {
+  top: 0;
+}
+#contact .social-icons-bg:hover .social-icons-img {
+  transform: rotateY(360deg);
 }
 #contact .social-icons-link {
   height: 100%;
@@ -836,6 +874,8 @@ nav li a {
   height: 4rem;
   width: 4rem;
   fill: white;
+  z-index: 2;
+  transition: 400ms;
 }
 #contact.active .social-icons-bg {
   animation: rollIn 1300ms ease-out 150ms 1 forwards;
