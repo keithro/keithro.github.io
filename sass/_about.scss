@@ -58,14 +58,14 @@
 
   @keyframes slideUp {
     0% {
-      transform: translateY(4rem);
+      transform: translateY(4rem) scale(.8);
       opacity: 0;
     }
-    85% {
-      transform: translateY(-.4rem);
+    80% {
+      transform: translateY(-.4rem) scale(1.05);
     }
     100% {
-      transform: translateY(0);
+      transform: translateY(0) scale(1);
       opacity: 1;
     }
   }
@@ -194,7 +194,7 @@
       transform: translateY(0) rotateY(0deg);
     }
     40% {
-      transform: translateY(-.6rem) rotateY(360deg);
+      transform: translateY(-.6rem) rotateY(180deg);
     }
     100% {
       transform: translateY(0) rotateY(0deg);
