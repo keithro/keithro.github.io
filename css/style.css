@@ -766,24 +766,21 @@ nav li a {
   }
   #projects .project-card {
     position: absolute;
-    width: 30rem;
+    width: 36rem;
     margin: 0rem;
   }
   #projects .project-card-1 {
     top: 5%;
-    left: 5%;
+    left: -5%;
   }
   #projects .project-card-2 {
-    top: 29%;
-    left: 38%;
+    top: 30%;
+    left: 20%;
+    z-index: 3;
   }
   #projects .project-card-3 {
-    top: 47%;
-    left: -55%;
-  }
-  #projects .project-card-4 {
-    top: 58%;
-    left: -11%;
+    top: 50%;
+    left: -30%;
   }
   #projects .project-description {
     position: absolute;
@@ -791,8 +788,11 @@ nav li a {
     box-shadow: 0 0.2rem 2rem 0 rgba(0, 0, 0, 0.25);
     font-size: 1.4rem;
     padding: 3rem;
-    height: 20rem;
+    height: 24rem;
     z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
